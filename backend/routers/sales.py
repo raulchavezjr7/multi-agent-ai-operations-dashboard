@@ -3,6 +3,7 @@ from backend.database import get_db_connection
 
 router = APIRouter(prefix="/sales", tags=["Sales"])
 
+
 @router.get("/summary")
 def sales_summary():
     conn = get_db_connection()
