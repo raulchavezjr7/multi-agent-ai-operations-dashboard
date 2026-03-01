@@ -4,6 +4,7 @@ from .inventory_agent import InventoryAgent
 from .operations_agent import OperationsAgent
 from .sales_agent import SalesAgent
 from .support_agent import SupportAgent
+from .rag_agent import rag_agent_resources
 
 
 class SupervisorAgent:
@@ -68,9 +69,9 @@ class SupervisorAgent:
             f"Accounting Insight:\n{results['accounting']}\n\n"
             f"Operations Insight:\n{results['operations']}\n\n"
         )
-        return self.call_lmm_jit(prompt)
+        return self.call_llm_jit(prompt)
 
-    def call_lmm_jit(self, prompt: str):
+    def call_llm_jit(self, prompt: str):
         try:
             response = requests.post(
                 "http://127.0.0.1:1234/v1/chat/completions",
@@ -110,8 +111,68 @@ class SupervisorAgent:
                     "Avoid filler, avoid repeating the prompt, and keep responses concise."
                 ),
             },
-            {"role": "user", "content": prompt},
-        ] + self.conversation
+            *self.conversation,
+        ]
+
+        try:
+            response = requests.post(
+                "http://127.0.0.1:1234/v1/chat/completions",
+                json={
+                    "model": self.model,
+                    "messages": messages,
+                    "temperature": 0.7,
+                    "max_tokens": 500,
+                },
+                timeout=120,
+            )
+            response.raise_for_status()
+            result = response.json()
+            return result["choices"][0]["message"]["content"]
+        except Exception as e:
+            return f"LLM error {e}"
+
+    def call_llm_rag(self, prompt: str):
+        rag_results = rag_agent_resources(prompt)
+        answer = rag_results["answer"]
+        sources = rag_results["sources"]
+
+        if sources:
+            source_list = "\n".join(
+                f"- {src.get('file', 'unknown')}" for src in sources
+            )
+            rag_context = (
+                f"RAG WORKER OUTPUT:\n{answer}\n\nSOURCES PROVIDED:\n{source_list}"
+            )
+        else:
+            rag_context = (
+                f"RAG WORKER OUTPUT:\n{answer}\n\nNo internal documents were relevant."
+            )
+
+        combined_input = (
+            f"USER QUESTION: {prompt}\n\n"
+            f"{rag_context}\n\n"
+            f"Please provide the final polished response based on the rules above."
+        )
+
+        self.conversation.append({"role": "user", "content": combined_input})
+
+        messages = [
+            {
+                "role": "system",
+                "content": (
+                    "You are the Supervisor Agent for an operations dashboard. "
+                    "You receive two inputs: (1) the user's question and (2) an answer produced by a RAG worker. "
+                    "Your job is to produce a final, polished response for the user.\n\n"
+                    "Rules:\n"
+                    "- Integrate RAG information clearly and accurately.\n"
+                    "- Present a short 'Sources Used' section at the end.\n"
+                    "- If no internal documents were used, state that clearly.\n"
+                    "- Keep responses concise, professional, and under 500 tokens.\n"
+                    "- Do not repeat the user prompt or use filler phrases."
+                ),
+            },
+            *self.conversation,
+        ]
 
         try:
             response = requests.post(

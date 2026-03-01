@@ -4,6 +4,7 @@ from backend.routers import (
     agents,
     operations,
     inventory,
+    rag,
     sales,
     supervisor,
     support,
@@ -15,6 +16,7 @@ app.include_router(accounting.router)
 app.include_router(agents.router)
 app.include_router(inventory.router)
 app.include_router(operations.router)
+app.include_router(rag.router)
 app.include_router(sales.router)
 app.include_router(support.router)
 app.include_router(supervisor.router)

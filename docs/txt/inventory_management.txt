@@ -1,0 +1,9 @@
+Timber & Tools Co. — Inventory Management Procedures
+
+Inventory counts are performed weekly by department leads.
+All incoming shipments must be checked against the purchase order before stocking shelves.
+
+Damaged items must be logged and placed in the designated return‑to‑vendor area.
+Fast‑moving items such as screws, nails, and drill bits should be restocked daily.
+
+If an item is out of stock, employees should offer to place a special order for the customer.

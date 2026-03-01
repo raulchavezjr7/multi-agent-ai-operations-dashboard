@@ -1,0 +1,21 @@
+Timber & Tools Co. — System Outage Procedure
+
+If the point‑of‑sale or inventory system goes offline, employees must follow the outage procedure.
+
+1. Notify the shift manager immediately.
+
+2. Check whether the outage is local to one register or store‑wide.
+
+3. Use the manual transaction forms stored at the Customer Service desk.
+
+4. For credit card payments, use the offline card imprinter and record the authorization slip.
+
+5. For cash payments, provide a handwritten receipt.
+
+6. Suspend all returns until the system is restored.
+
+7. Do not provide price overrides without manager approval.
+
+8. Once the system is back online, enter all manual transactions into the POS within two hours.
+
+The IT hotline should be contacted if the outage lasts longer than 15 minutes.
