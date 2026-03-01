@@ -3,7 +3,7 @@ import json
 
 
 class SupportAgent(BaseAgent):
-    def __init__(self, model="meta-llama-3.1-8b-instruct"):
+    def __init__(self, model="phi-3.1-mini-4k-instruct"):
         super().__init__(
             name="Support Agent",
             api_endpoint="http://127.0.0.1:8000/support/summary",

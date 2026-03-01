@@ -4,7 +4,7 @@ import json
 
 class BaseAgent:
     def __init__(
-        self, name: str, api_endpoint: str, model: str = "meta-llama-3.1-8b-instruct"
+        self, name: str, api_endpoint: str, model: str = "phi-3.1-mini-4k-instruct"
     ):
         self.name = name
         self.api_endpoint = api_endpoint
