@@ -1,0 +1,29 @@
+from fastapi import APIRouter
+from pydantic import BaseModel
+
+from backend.database import get_db_connection
+
+router = APIRouter(prefix="/sql", tags=["SQL"])
+
+
+class SQLQuery(BaseModel):
+    query: str
+
+
+@router.post("/")
+def run_sql(query: SQLQuery):
+    conn = get_db_connection()
+    try:
+        cursor = conn.execute(query.query)
+        rows = cursor.fetchall()
+        dict_rows = [dict(row) for row in rows]
+        columns = list(dict_rows[0].keys()) if dict_rows else []
+        list_rows = [list(row.values()) for row in dict_rows]
+
+        return {"columns": columns, "rows": list_rows}
+
+    except Exception as e:
+        return {"error": str(e)}
+
+    finally:
+        conn.close()
