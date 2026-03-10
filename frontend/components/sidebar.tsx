@@ -8,12 +8,20 @@ export default function Sidebar() {
       <h2 className="text-xl font-semibold"> AI Ops Dashboard </h2>
       <nav className="flex flex-col gap-2">
         <Link
+          href="/dashboard/visualizations"
+          className={cn(
+            "px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground",
+          )}
+        >
+          Visualizations
+        </Link>
+        <Link
           href="/dashboard/test-rag"
           className={cn(
             "px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground",
           )}
         >
-          Supervisor Test-Rag
+          Supervisor Test with Rag
         </Link>
         <Link
           href="/dashboard/database"
@@ -22,6 +30,12 @@ export default function Sidebar() {
           )}
         >
           Database Viewer
+        </Link>
+        <Link
+          href="/dashboard/chat"
+          className="px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground"
+        >
+          Chatbot
         </Link>
       </nav>
     </aside>
