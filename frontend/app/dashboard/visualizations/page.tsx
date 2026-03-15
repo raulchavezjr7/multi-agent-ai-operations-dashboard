@@ -2,99 +2,94 @@
 
 import { useEffect, useState } from "react";
 import { Card } from "@/components/ui/card";
-
-interface OpsRow {
-  region: string;
-  total_customers: number;
-}
-
-interface SalesRow {
-  region: string;
-  revenue: number;
-}
+import { ChartDef, ChartRow } from "./renderers/types";
+import { BarChart } from "./renderers/bar";
+import { LineChart } from "./renderers/line";
+import { AreaChart } from "./renderers/area";
+import { ColumnLineChart } from "./renderers/columnLine";
+import { Heatmap } from "./renderers/heatmap";
+import { PieChart } from "./renderers/pie";
 
 export default function VisualizationsPage() {
-  const [ops, setOps] = useState<OpsRow[]>([]);
-  const [sales, setSales] = useState<SalesRow[]>([]);
+  const [charts, setCharts] = useState<ChartDef[]>([]);
+  const [dataMap, setDataMap] = useState<Record<string, ChartRow[]>>({});
 
   useEffect(() => {
-    async function load() {
-      const opsRes = await fetch("http://localhost:8000/operations/summary");
-      const opsJson = await opsRes.json();
-      setOps(opsJson.operations_summary || []);
-
-      const salesRes = await fetch("http://localhost:8000/sales/summary");
-      const salesJson = await salesRes.json();
-      setSales(salesJson.sales_summary || []);
+    async function loadCharts() {
+      const res = await fetch("http://localhost:8000/charts");
+      const json = await res.json();
+      setCharts(json);
     }
-    load();
+    loadCharts();
   }, []);
 
-  const opsMax = Math.max(...ops.map((d) => d.total_customers), 0);
-  const salesMax = Math.max(...sales.map((d) => d.revenue), 0);
+  useEffect(() => {
+    async function loadData() {
+      const newData: Record<string, ChartRow[]> = {};
 
-  const formatRevenue = (value: number) =>
-    new Intl.NumberFormat("en-US", {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    }).format(value);
+      for (const chart of charts) {
+        const res = await fetch("http://localhost:8000/sql/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: chart.sql }),
+        });
+
+        const json = await res.json();
+
+        if (json.columns && json.rows) {
+          const formatted: ChartRow[] = json.rows.map((row: unknown[]) => {
+            const obj: ChartRow = {};
+            json.columns.forEach((col: string, idx: number) => {
+              obj[col] = row[idx] as string | number;
+            });
+            return obj;
+          });
+
+          newData[chart.id] = formatted;
+        }
+      }
+
+      setDataMap(newData);
+    }
+
+    if (charts.length > 0) loadData();
+  }, [charts]);
+
+  function renderChart(chart: ChartDef, rows: ChartRow[] | undefined) {
+    if (!rows) return null;
+
+    switch (chart.type) {
+      case "bar":
+        return <BarChart chart={chart} rows={rows} />;
+      case "line":
+        return <LineChart chart={chart} rows={rows} />;
+      case "area":
+        return <AreaChart chart={chart} rows={rows} />;
+      case "column-line":
+        return <ColumnLineChart chart={chart} rows={rows} />;
+      case "heatmap":
+        return <Heatmap chart={chart} rows={rows} />;
+      case "pie":
+        return <PieChart chart={chart} rows={rows} />;
+      default:
+        return <div>Unknown chart/graph type: {chart.type}</div>;
+    }
+  }
 
   return (
-    <div className="w-full flex">
-      <div className="max-w-xl space-y-6 mx-2">
-        <h1 className="text-2xl font-semibold">Customers by Region</h1>
-        <Card className="px-10 py-4 shadow-sm border rounded-xl bg-background">
-          <div className="flex items-end justify-center gap-6 h-64">
-            {ops.map((row, i) => {
-              const height = (row.total_customers / opsMax) * 200;
+    <div className="w-full grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,500px))] justify-center">
+      {charts.map((chart) => (
+        <Card
+          key={chart.id}
+          className="py-4 px-2 shadow-sm border rounded-xl bg-muted/30"
+        >
+          <h2 className="text-lg font-semibold mb-4 text-center">
+            {chart.name}
+          </h2>
 
-              return (
-                <div key={i} className="flex flex-col items-center">
-                  <div
-                    className="bg-blue-500 rounded-md transition-all duration-300"
-                    style={{
-                      width: "40px",
-                      height: `${height}px`,
-                    }}
-                  ></div>
-
-                  <span className="mt-2 text-sm font-medium">{row.region}</span>
-                  <span className="text-xs text-muted-foreground">
-                    {row.total_customers}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
+          {renderChart(chart, dataMap[chart.id])}
         </Card>
-      </div>
-      <div className="max-w-xl space-y-6 mx-2">
-        <h1 className="text-2xl font-semibold">Revenue by Region</h1>
-        <Card className="px-10 py-4 shadow-sm border rounded-xl bg-background">
-          <div className="flex items-end justify-center gap-6 h-64">
-            {sales.map((row, i) => {
-              const height = (row.revenue / salesMax) * 200;
-
-              return (
-                <div key={i} className="flex flex-col items-center">
-                  <div
-                    className="bg-green-700 rounded-md transition-all duration-300"
-                    style={{
-                      width: "40px",
-                      height: `${height}px`,
-                    }}
-                  ></div>
-
-                  <span className="mt-2 text-sm font-medium">{row.region}</span>
-                  <span className="text-xs text-muted-foreground">
-                    ${formatRevenue(row.revenue)}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </Card>
-      </div>
+      ))}
     </div>
   );
 }
