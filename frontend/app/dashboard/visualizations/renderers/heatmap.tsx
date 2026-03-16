@@ -32,15 +32,16 @@ export function Heatmap({ chart, rows }: HeatmapProps) {
   }
 
   return (
-    <div className="grid grid-cols-3 gap-2 p-4">
-      {rows.map((row, i) => {
-        const value = Number(row[chart.yField] ?? 0);
-        const intensity = maxValue > 0 ? value / maxValue : 0;
+    <div style={{ width: "100%", height: "250px" }}>
+      <div className="grid grid-cols-3 gap-2 p-4">
+        {rows.map((row, i) => {
+          const value = Number(row[chart.yField] ?? 0);
+          const intensity = maxValue > 0 ? value / maxValue : 0;
 
-        return (
-          <div
-            key={chart.id + "_heat_" + i}
-            className="
+          return (
+            <div
+              key={chart.id + "_heat_" + i}
+              className="
               rounded 
               text-center 
               text-white 
@@ -54,13 +55,26 @@ export function Heatmap({ chart, rows }: HeatmapProps) {
               text-xs 
               sm:text-sm
             "
-            style={{ backgroundColor: getHeatColor(intensity) }}
-          >
-            <span className="font-medium">{String(row[chart.xField])}</span>
-            <span className="opacity-90">{value.toLocaleString("en-US")}</span>
-          </div>
-        );
-      })}
+              style={{ backgroundColor: getHeatColor(intensity) }}
+            >
+              <span className="font-medium">{String(row[chart.xField])}</span>
+              <span className="opacity-90">
+                {value.toLocaleString("en-US")}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+      <div className="flex flex-col items-center mt-3">
+        <div className="flex items-center gap-3">
+          <span className="text-xs text-gray-500">Less</span>
+          <div className="h-3 w-32 rounded bg-gradient-to-r from-green-500 via-yellow-400 to-red-600"></div>
+          <span className="text-xs text-gray-500">More</span>
+        </div>
+        <p className="text-[10px] text-gray-400 mt-1">
+          Darker colors indicate higher density
+        </p>
+      </div>
     </div>
   );
 }

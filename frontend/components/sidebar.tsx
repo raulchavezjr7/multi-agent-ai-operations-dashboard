@@ -1,11 +1,15 @@
 "use client";
 import Link from "next/link";
+import { ModeToggle } from "./modeToggle";
 import { cn } from "@/lib/utils";
 
 export default function Sidebar() {
   return (
     <aside className="w-64 h-screen border-r bg-muted/30 p-4 flex flex-col gap-4">
-      <h2 className="text-xl font-semibold"> AI Ops Dashboard </h2>
+      <div className="flex items-center justify-around">
+        <h2 className="text-xl font-semibold"> AI Ops Dashboard </h2>
+        <ModeToggle />
+      </div>
       <nav className="flex flex-col gap-2">
         <Link
           href="/dashboard/visualizations"

@@ -3,12 +3,14 @@
 import { useEffect, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { ChartDef, ChartRow } from "./renderers/types";
+import { Button } from "@/components/ui/button";
 import { BarChart } from "./renderers/bar";
 import { LineChart } from "./renderers/line";
 import { AreaChart } from "./renderers/area";
 import { ColumnLineChart } from "./renderers/columnLine";
 import { Heatmap } from "./renderers/heatmap";
 import { PieChart } from "./renderers/pie";
+import { ModifyGraphDialog } from "./modify";
 
 export default function VisualizationsPage() {
   const [charts, setCharts] = useState<ChartDef[]>([]);
@@ -77,19 +79,28 @@ export default function VisualizationsPage() {
   }
 
   return (
-    <div className="w-full grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,500px))] justify-center">
-      {charts.map((chart) => (
-        <Card
-          key={chart.id}
-          className="py-4 px-2 shadow-sm border rounded-xl bg-muted/30"
-        >
-          <h2 className="text-lg font-semibold mb-4 text-center">
-            {chart.name}
-          </h2>
+    <>
+      <div className="grid grid-cols-3 items-center w-full mb-8">
+        <div />
+        <h2 className="text-lg font-semibold mb-4 text-center">Info</h2>
+        <div className="flex justify-end w-full pr-[3vw] ">
+          <ModifyGraphDialog />
+        </div>
+      </div>
+      <div className="w-full grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,500px))] justify-center">
+        {charts.map((chart) => (
+          <Card
+            key={chart.id}
+            className="py-4 px-2 shadow-sm border rounded-xl bg-muted/30"
+          >
+            <h2 className="text-lg font-semibold mb-4 text-center">
+              {chart.name}
+            </h2>
 
-          {renderChart(chart, dataMap[chart.id])}
-        </Card>
-      ))}
-    </div>
+            {renderChart(chart, dataMap[chart.id])}
+          </Card>
+        ))}
+      </div>
+    </>
   );
 }
