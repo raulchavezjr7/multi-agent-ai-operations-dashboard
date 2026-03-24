@@ -7,7 +7,15 @@ export interface ChartDef {
   yField: string;
   color?: string;
   colors?: string[];
-  span: number;
 }
+
+export const defaultChartDef: ChartDef = {
+  id: "",
+  name: "",
+  sql: "",
+  type: "",
+  xField: "",
+  yField: "",
+};
 
 export type ChartRow = Record<string, string | number>;

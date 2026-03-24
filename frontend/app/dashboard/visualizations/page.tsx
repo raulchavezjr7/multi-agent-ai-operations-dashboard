@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { ChartDef, ChartRow } from "./renderers/types";
-import { Button } from "@/components/ui/button";
 import { BarChart } from "./renderers/bar";
 import { LineChart } from "./renderers/line";
 import { AreaChart } from "./renderers/area";
@@ -78,13 +77,56 @@ export default function VisualizationsPage() {
     }
   }
 
+  const handleAdd = async (spec: ChartDef) => {
+    const updated = [...charts, spec];
+    setCharts(updated);
+
+    await fetch("/api/charts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updated),
+    });
+  };
+
+  async function handleEdit(editChart: ChartDef) {
+    const res = await fetch(`http://localhost:8000/charts/${editChart.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(editChart),
+    });
+
+    if (res.ok) {
+      const updatedChart = await res.json();
+      setCharts((prev) =>
+        prev.map((chart) => (chart.id === editChart.id ? updatedChart : chart)),
+      );
+    }
+    console.log(editChart);
+  }
+
+  async function handleDelete(chartId: string) {
+    const res = await fetch(`http://localhost:8000/charts/${chartId}`, {
+      method: "DELETE",
+    });
+    if (res.ok) {
+      setCharts((prev) => prev.filter((chart) => chart.id !== chartId));
+    }
+  }
+
   return (
     <>
       <div className="grid grid-cols-3 items-center w-full mb-8">
         <div />
-        <h2 className="text-lg font-semibold mb-4 text-center">Info</h2>
+        <h2 className="text-lg font-semibold mb-4 text-center">Overview</h2>
         <div className="flex justify-end w-full pr-[3vw] ">
-          <ModifyGraphDialog />
+          <ModifyGraphDialog
+            charts={charts}
+            onEdit={handleEdit}
+            onDelete={handleDelete}
+            onCreate={handleAdd}
+          />
         </div>
       </div>
       <div className="w-full grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,500px))] justify-center">
