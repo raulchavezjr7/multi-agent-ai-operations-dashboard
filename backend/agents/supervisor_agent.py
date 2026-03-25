@@ -1,10 +1,18 @@
+import json
+import os
+from pathlib import Path
+
 import requests
+
 from .accounting_agent import AccountingAgent
 from .inventory_agent import InventoryAgent
 from .operations_agent import OperationsAgent
+from .rag_agent import rag_agent_resources
 from .sales_agent import SalesAgent
 from .support_agent import SupportAgent
-from .rag_agent import rag_agent_resources
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+SCHEMA_FILE = Path(f"{BASE_DIR}/../../database/schema.json")
 
 
 class SupervisorAgent:
@@ -181,6 +189,69 @@ class SupervisorAgent:
                     "model": self.model,
                     "messages": messages,
                     "temperature": 0.7,
+                    "max_tokens": 500,
+                },
+                timeout=120,
+            )
+            response.raise_for_status()
+            result = response.json()
+            return result["choices"][0]["message"]["content"]
+        except Exception as e:
+            return f"LLM error {e}"
+
+    def call_chart_llm(self, prompt: str):
+
+        self.conversation.append({"role": "user", "content": prompt})
+        schema = json.loads(SCHEMA_FILE.read_text())
+
+        chartDefObject = (
+            "{"
+            '"id": string,'
+            '"name": string,'
+            '"sql": string,'
+            '"type": string,'
+            '"xField": string,'
+            '"yField": string,'
+            '"color"?: string,'
+            '"colors"?: string[]'
+            "}"
+        )
+
+        chartDefObjectExplanation = (
+            "id is a unique identifier, snake_case"
+            "name is a human-readable chart name"
+            "sql is a valid SQLite SELECT query"
+            "type is either a bar, line, area, region, heatmap, or pie"
+            "xField is a column name used for x-axis or category"
+            "yField is a column name used for y-axis or value"
+            "color is a single color (hex) that is only used in bar, line, area, and region"
+            "colors is a multiple colors only for pie"
+        )
+
+        messages = [
+            {
+                "role": "system",
+                "content": (
+                    "Your ONLY job is to output a valid ChartDef object to help the user with creating new visualization charts."
+                    f"Database Schema: {schema}"
+                    f"ChartDef Object Format: {chartDefObject}"
+                    f"ChartDef Object Rules: {chartDefObjectExplanation}"
+                    "Rules:"
+                    "You MUST return a ChartDef Object in the exact format shown in the brackets of ChartDef Object Format"
+                    "You MUST NOT return explanations, reasoning, markdown, or commentary."
+                    "You MUST reference only tables and columns that exist in the schema."
+                ),
+            },
+            *self.conversation,
+        ]
+        print(messages)
+        try:
+            response = requests.post(
+                "http://127.0.0.1:1234/v1/chat/completions",
+                json={
+                    "model": self.model,
+                    "messages": messages,
+                    "temperature": 0.5,
                     "max_tokens": 500,
                 },
                 timeout=120,

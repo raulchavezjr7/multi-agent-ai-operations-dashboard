@@ -1,4 +1,5 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
+
 from backend.agents.supervisor_agent import SupervisorAgent
 
 router = APIRouter(prefix="/supervisor", tags=["Supervisor"])
@@ -31,3 +32,19 @@ def supervisor_rag_test():
     results = supervisor.call_llm_rag(test_query)
 
     return {"query": test_query, "supervisor_response": results}
+
+
+@router.post("/create-chart-chat")
+async def supervisor_chart_chat(request: Request):
+    body = await request.json()
+    messages = body.get("messages", [])
+
+    user_message = ""
+    if messages:
+        last = messages[-1]
+        user_message = last.get("content", "")
+
+    supervisor = SupervisorAgent()
+    supervisor_reply = supervisor.call_chart_llm(prompt=user_message)
+
+    return {"response": supervisor_reply}

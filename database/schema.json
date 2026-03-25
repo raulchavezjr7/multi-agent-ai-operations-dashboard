@@ -1,0 +1,287 @@
+{
+  "tables": [
+    {
+      "name": "customer",
+      "columns": [
+        {
+          "name": "customer_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "name",
+          "type": "TEXT"
+        },
+        {
+          "name": "email",
+          "type": "TEXT"
+        },
+        {
+          "name": "phone",
+          "type": "TEXT"
+        },
+        {
+          "name": "region",
+          "type": "TEXT"
+        },
+        {
+          "name": "industry",
+          "type": "TEXT"
+        },
+        {
+          "name": "customer_value_tier",
+          "type": "TEXT"
+        },
+        {
+          "name": "date_joined",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "supplier",
+      "columns": [
+        {
+          "name": "supplier_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "supplier_name",
+          "type": "TEXT"
+        },
+        {
+          "name": "contact_email",
+          "type": "TEXT"
+        },
+        {
+          "name": "lead_time_days",
+          "type": "INTEGER"
+        },
+        {
+          "name": "rating",
+          "type": "REAL"
+        },
+        {
+          "name": "payment_terms",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "inventory",
+      "columns": [
+        {
+          "name": "product_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "product_name",
+          "type": "TEXT"
+        },
+        {
+          "name": "category",
+          "type": "TEXT"
+        },
+        {
+          "name": "supplier_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "unit_cost",
+          "type": "REAL"
+        },
+        {
+          "name": "current_stock",
+          "type": "INTEGER"
+        },
+        {
+          "name": "reorder_level",
+          "type": "INTEGER"
+        },
+        {
+          "name": "reorder_quantity",
+          "type": "INTEGER"
+        },
+        {
+          "name": "warehouse_location",
+          "type": "TEXT"
+        },
+        {
+          "name": "unit_price",
+          "type": "REAL"
+        }
+      ]
+    },
+    {
+      "name": "invoice",
+      "columns": [
+        {
+          "name": "invoice_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "customer_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "invoice_date",
+          "type": "TEXT"
+        },
+        {
+          "name": "due_date",
+          "type": "TEXT"
+        },
+        {
+          "name": "payment_status",
+          "type": "TEXT"
+        },
+        {
+          "name": "subtotal",
+          "type": "REAL"
+        },
+        {
+          "name": "tax_amount",
+          "type": "REAL"
+        },
+        {
+          "name": "total_amount",
+          "type": "REAL"
+        },
+        {
+          "name": "payment_method",
+          "type": "TEXT"
+        },
+        {
+          "name": "sales_rep",
+          "type": "TEXT"
+        },
+        {
+          "name": "region",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "invoice_item",
+      "columns": [
+        {
+          "name": "line_item_id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "invoice_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "product_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "quantity",
+          "type": "INTEGER"
+        },
+        {
+          "name": "unit_price",
+          "type": "REAL"
+        },
+        {
+          "name": "total_amount",
+          "type": "REAL"
+        }
+      ]
+    },
+    {
+      "name": "support_tickets",
+      "columns": [
+        {
+          "name": "ticket_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "customer_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date_opened",
+          "type": "TEXT"
+        },
+        {
+          "name": "date_closed",
+          "type": "TEXT"
+        },
+        {
+          "name": "status",
+          "type": "TEXT"
+        },
+        {
+          "name": "priority",
+          "type": "TEXT"
+        },
+        {
+          "name": "category",
+          "type": "TEXT"
+        },
+        {
+          "name": "assigned_agent",
+          "type": "TEXT"
+        },
+        {
+          "name": "resolution_time_hours",
+          "type": "REAL"
+        },
+        {
+          "name": "customer_sentiment",
+          "type": "TEXT"
+        },
+        {
+          "name": "ticket_description",
+          "type": "TEXT"
+        },
+        {
+          "name": "invoice_id",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "accounting",
+      "columns": [
+        {
+          "name": "invoice_acct_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "account",
+          "type": "TEXT"
+        },
+        {
+          "name": "description",
+          "type": "TEXT"
+        },
+        {
+          "name": "amount",
+          "type": "TEXT"
+        },
+        {
+          "name": "type",
+          "type": "TEXT"
+        },
+        {
+          "name": "department",
+          "type": "TEXT"
+        },
+        {
+          "name": "vendor",
+          "type": "TEXT"
+        },
+        {
+          "name": "payment_method",
+          "type": "TEXT"
+        }
+      ]
+    }
+  ]
+}

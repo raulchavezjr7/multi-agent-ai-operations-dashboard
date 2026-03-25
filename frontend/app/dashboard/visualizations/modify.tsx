@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/dialog";
 import { SquarePen } from "lucide-react";
 import { ChartDef, defaultChartDef } from "./renderers/types";
-import { LlmAddDialog } from "./LlmAddDialog";
+import { LlmAddDialog } from "./llmAddDialog";
 
 interface ModifyGraphDialogProps {
   charts: ChartDef[];

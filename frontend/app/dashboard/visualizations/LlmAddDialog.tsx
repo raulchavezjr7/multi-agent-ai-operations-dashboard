@@ -33,23 +33,28 @@ export function LlmAddDialog({ onChartSpecGenerated }: LlmAddDialogProps) {
     setMessages(newMessages);
     setInput("");
     setLoading(true);
-
-    const res = await fetch("/api/chart-llm", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ messages: newMessages }),
-    });
+    console.log(newMessages);
+    const res = await fetch(
+      `http://localhost:8000/supervisor/create-chart-chat`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: newMessages }),
+      },
+    );
 
     const data = await res.json();
     setLoading(false);
 
-    if (data.spec) {
-      setGeneratedSpec(data.spec);
+    if (data.response) {
+      setGeneratedSpec(data.response);
       setMessages([
         ...newMessages,
         { role: "assistant", content: "Here is the chart I generated." },
       ]);
     }
+    console.log(data);
+    console.log(messages);
   };
 
   const handleConfirm = () => {
