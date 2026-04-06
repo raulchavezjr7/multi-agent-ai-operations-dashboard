@@ -218,7 +218,7 @@ class SupervisorAgent:
         )
 
         chartDefObjectExplanation = (
-            "id is a unique identifier, snake_case"
+            "id is a unique identifier, snake_case, add random number to id for uniqueness"
             "name is a human-readable chart name"
             "sql is a valid SQLite SELECT query"
             "type is either a bar, line, area, region, heatmap, or pie"
@@ -244,7 +244,6 @@ class SupervisorAgent:
             },
             *self.conversation,
         ]
-        print(messages)
         try:
             response = requests.post(
                 "http://127.0.0.1:1234/v1/chat/completions",

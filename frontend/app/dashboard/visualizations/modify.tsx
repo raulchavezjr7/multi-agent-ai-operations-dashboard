@@ -26,6 +26,8 @@ interface ModifyGraphDialogProps {
   onEdit?: (chart: ChartDef) => void;
   onDelete?: (id: string) => void;
   onCreate?: (spec: ChartDef) => void;
+  editingChart: ChartDef | null;
+  setEditingChart: (chart: ChartDef | null) => void;
 }
 
 export function ModifyGraphDialog({
@@ -33,8 +35,10 @@ export function ModifyGraphDialog({
   onEdit,
   onDelete,
   onCreate,
+  editingChart,
+  setEditingChart,
 }: ModifyGraphDialogProps) {
-  const [editingChart, setEditingChart] = useState<ChartDef>(defaultChartDef);
+  //const [editingChart, setEditingChart] = useState<ChartDef>(defaultChartDef);
   const [deleteChart, setDeleteChart] = useState<ChartDef>(defaultChartDef);
   const [addChart, setAddChart] = useState(false);
 
@@ -102,13 +106,15 @@ export function ModifyGraphDialog({
         </DialogContent>
       </Dialog>
       {addChart && (
-        <LlmAddDialog onChartSpecGenerated={onCreate!}></LlmAddDialog>
+        <LlmAddDialog
+          onChartSpecGenerated={(spec) => {
+            onCreate?.(spec); // save it
+            setEditingChart(spec); // immediately open edit dialog
+          }}
+        />
       )}
-      {editingChart === defaultChartDef ? null : (
-        <Dialog
-          open={true}
-          onOpenChange={() => setEditingChart(defaultChartDef)}
-        >
+      {editingChart ? (
+        <Dialog open={true} onOpenChange={() => setEditingChart(null)}>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
               <DialogTitle> Edit Chart</DialogTitle>
@@ -123,7 +129,7 @@ export function ModifyGraphDialog({
                 <input
                   type="text"
                   className="w-full border rounded p-2"
-                  value={editingChart.name}
+                  value={editingChart.name ?? ""}
                   onChange={(e) =>
                     setEditingChart({ ...editingChart, name: e.target.value })
                   }
@@ -134,7 +140,7 @@ export function ModifyGraphDialog({
                 <input
                   type="text"
                   className="w-full border rounded p-2"
-                  value={editingChart.sql}
+                  value={editingChart.sql ?? ""}
                   onChange={(e) =>
                     setEditingChart({ ...editingChart, sql: e.target.value })
                   }
@@ -167,7 +173,7 @@ export function ModifyGraphDialog({
                 <input
                   type="text"
                   className="w-full border rounded p-2"
-                  value={editingChart.xField}
+                  value={editingChart.xField ?? ""}
                   onChange={(e) =>
                     setEditingChart({ ...editingChart, xField: e.target.value })
                   }
@@ -178,7 +184,7 @@ export function ModifyGraphDialog({
                 <input
                   type="text"
                   className="w-full border rounded p-2"
-                  value={editingChart.yField}
+                  value={editingChart.yField ?? ""}
                   onChange={(e) =>
                     setEditingChart({ ...editingChart, yField: e.target.value })
                   }
@@ -200,7 +206,7 @@ export function ModifyGraphDialog({
                       id="colorPicker"
                       type="color"
                       className="hidden"
-                      value={editingChart.color}
+                      value={editingChart.color ?? "#000000"}
                       onChange={(e) =>
                         setEditingChart({
                           ...editingChart,
@@ -254,17 +260,14 @@ export function ModifyGraphDialog({
             </div>
 
             <DialogFooter>
-              <Button
-                variant="secondary"
-                onClick={() => setEditingChart(defaultChartDef)}
-              >
+              <Button variant="secondary" onClick={() => setEditingChart(null)}>
                 Cancel
               </Button>
 
               <Button
                 onClick={() => {
                   onEdit?.(editingChart);
-                  setEditingChart(defaultChartDef);
+                  setEditingChart(null);
                 }}
               >
                 Save
@@ -272,7 +275,7 @@ export function ModifyGraphDialog({
             </DialogFooter>
           </DialogContent>
         </Dialog>
-      )}
+      ) : null}
       {deleteChart === defaultChartDef ? null : (
         <Dialog
           open={true}

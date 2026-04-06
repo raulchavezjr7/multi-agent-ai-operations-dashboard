@@ -14,7 +14,7 @@ export function BarChart({ chart, rows }: ChartProps) {
   );
 
   return (
-    <div className="flex items-end justify-center gap-3 sm:gap-6 h-64 py-2 overflow-hidden">
+    <div className="flex items-end justify-evenly gap-3 sm:gap-6 h-70 py-2 overflow-x-auto px-10">
       {rows.map((row, i) => {
         const value = Number(row[chart.yField] ?? 0);
         const heightPx = maxValue > 0 ? (value / maxValue) * 200 : 0;
@@ -32,11 +32,11 @@ export function BarChart({ chart, rows }: ChartProps) {
               }}
             />
 
-            <span className="mt-2 text-[10px] sm:text-sm font-medium break-words text-center">
+            <span className="mt-2 text-[10px] sm:text-xs font-medium break-words h-8 text-center overflow-y-hidden">
               {String(row[chart.xField])}
             </span>
 
-            <span className="text-[9px] sm:text-xs text-muted-foreground">
+            <span className="text-[9px] sm:text-xs text-muted-foreground h-2">
               {value.toLocaleString()}
             </span>
           </div>

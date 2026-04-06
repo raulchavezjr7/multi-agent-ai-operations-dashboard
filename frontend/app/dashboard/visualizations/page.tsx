@@ -14,6 +14,7 @@ import { ModifyGraphDialog } from "./modify";
 export default function VisualizationsPage() {
   const [charts, setCharts] = useState<ChartDef[]>([]);
   const [dataMap, setDataMap] = useState<Record<string, ChartRow[]>>({});
+  const [editingChart, setEditingChart] = useState<ChartDef | null>(null);
 
   useEffect(() => {
     async function loadCharts() {
@@ -23,6 +24,12 @@ export default function VisualizationsPage() {
     }
     loadCharts();
   }, []);
+
+  async function loadCharts() {
+    const res = await fetch("http://localhost:8000/charts");
+    const json = await res.json();
+    setCharts(json);
+  }
 
   useEffect(() => {
     async function loadData() {
@@ -78,14 +85,16 @@ export default function VisualizationsPage() {
   }
 
   const handleAdd = async (spec: ChartDef) => {
-    const updated = [...charts, spec];
-    setCharts(updated);
-
-    await fetch("/api/charts", {
+    const res = await fetch("http://localhost:8000/charts/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(updated),
+      body: JSON.stringify({ test: spec }),
     });
+
+    const created = await res.json();
+
+    setCharts((prev) => [...prev, created]);
+    setEditingChart(created);
   };
 
   async function handleEdit(editChart: ChartDef) {
@@ -126,6 +135,8 @@ export default function VisualizationsPage() {
             onEdit={handleEdit}
             onDelete={handleDelete}
             onCreate={handleAdd}
+            editingChart={editingChart}
+            setEditingChart={setEditingChart}
           />
         </div>
       </div>

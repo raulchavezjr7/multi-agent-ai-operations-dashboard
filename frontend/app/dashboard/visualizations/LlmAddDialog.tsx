@@ -46,11 +46,23 @@ export function LlmAddDialog({ onChartSpecGenerated }: LlmAddDialogProps) {
     const data = await res.json();
     setLoading(false);
 
+    console.log(data);
+    const cleanedData = data.response
+      .replace(/```/g, "")
+      .replace(/\\n/g, "")
+      .replace(/\\"/g, '"');
+
+    console.log(cleanedData);
+
     if (data.response) {
-      setGeneratedSpec(data.response);
+      setGeneratedSpec(cleanedData);
+
       setMessages([
         ...newMessages,
-        { role: "assistant", content: "Here is the chart I generated." },
+        {
+          role: "assistant",
+          content: `Here is the chart I generated. \n\n${cleanedData}`,
+        },
       ]);
     }
     console.log(data);
@@ -64,6 +76,10 @@ export function LlmAddDialog({ onChartSpecGenerated }: LlmAddDialogProps) {
     setMessages([]);
     setGeneratedSpec(null);
   };
+  // const test = () => {
+  //   console.log(generatedSpec);
+  //   return <div></div>;
+  // };
   return (
     <>
       <Dialog open={open} onOpenChange={setOpen}>
@@ -71,8 +87,8 @@ export function LlmAddDialog({ onChartSpecGenerated }: LlmAddDialogProps) {
           <DialogHeader>
             <DialogTitle>Create a New Chart</DialogTitle>
             <DialogDescription>
-              Describe the chart you want. The assistant will generate a NoSQL
-              chart entry.
+              Describe only the chart you want. The assistant will only generate
+              a NoSQL chart entry.
             </DialogDescription>
           </DialogHeader>
 
@@ -103,11 +119,12 @@ export function LlmAddDialog({ onChartSpecGenerated }: LlmAddDialogProps) {
             {loading ? "Thinking..." : "Send"}
           </Button>
 
-          {generatedSpec && (
+          {/* {generatedSpec && (
             <div className="border rounded p-2 bg-muted text-xs max-h-48 overflow-y-auto">
               <pre>{JSON.stringify(generatedSpec, null, 2)}</pre>
+              {test()}
             </div>
-          )}
+          )} */}
           <DialogFooter>
             <Button variant="secondary" onClick={() => setOpen(false)}>
               Cancel
