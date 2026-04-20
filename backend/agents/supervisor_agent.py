@@ -4,6 +4,8 @@ from pathlib import Path
 
 import requests
 
+from backend.overview_nosql_helper import update_overview
+
 from .accounting_agent import AccountingAgent
 from .inventory_agent import InventoryAgent
 from .operations_agent import OperationsAgent
@@ -59,6 +61,7 @@ class SupervisorAgent:
         self.conversation = []
 
     def run_all(self):
+
         results = {
             "sales": self.sales_agent.run(),
             "inventory": self.inventory_agent.run(),
@@ -67,8 +70,14 @@ class SupervisorAgent:
             "operations": self.operations_agent.run(),
         }
 
+        update_overview(1, {"sales": results["sales"]})
+        update_overview(2, {"inventory": results["inventory"]})
+        update_overview(3, {"support": results["support"]})
+        update_overview(4, {"accounting": results["accounting"]})
+        update_overview(5, {"operations": results["operations"]})
+
         prompt = (
-            "You are the Supervisor Agent for a operation dashboard. Combine the insights from all domain agents. "
+            "You are the Supervisor Agent for a operation dashboard. Combine the insights from all domain agents."
             "Provide a clear, meaningful, concise summary of the overall business situation. "
             "Highlight important patterns, risks, and opportunities.\n\n"
             f"Sales Insight:\n{results['sales']}\n\n"
@@ -77,9 +86,9 @@ class SupervisorAgent:
             f"Accounting Insight:\n{results['accounting']}\n\n"
             f"Operations Insight:\n{results['operations']}\n\n"
         )
-        return self.call_llm_jit(prompt)
+        return self.call_llm_overview(prompt)
 
-    def call_llm_jit(self, prompt: str):
+    def call_llm_overview(self, prompt: str):
         try:
             response = requests.post(
                 "http://127.0.0.1:1234/v1/chat/completions",
@@ -90,19 +99,22 @@ class SupervisorAgent:
                             "role": "system",
                             "content": (
                                 "You are the Supervisor Agent for a operation dashboard."
-                                "Keep responses concise, structured, and under 500 tokens."
+                                "Keep responses concise, structured, and under 600 tokens."
                                 "Avoid filler, avoid repeating the prompt, and keep responses concise."
                             ),
                         },
                         {"role": "user", "content": prompt},
                     ],
                     "temperature": 0.7,
-                    "max_tokens": 500,
+                    "max_tokens": 800,
                 },
-                timeout=120,
+                timeout=480,
             )
             response.raise_for_status()
             result = response.json()
+            update_overview(
+                6, {"supervisor": result["choices"][0]["message"]["content"]}
+            )
             return result["choices"][0]["message"]["content"]
         except Exception as e:
             return f"LLM error {e}"

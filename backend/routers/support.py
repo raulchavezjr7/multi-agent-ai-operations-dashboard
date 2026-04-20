@@ -1,44 +1,64 @@
 from fastapi import APIRouter
+
+from backend.agents.support_agent import SupportAgent
 from backend.database import get_db_connection
 
 router = APIRouter(prefix="/support", tags=["Support"])
 
 
+@router.get("/LLM-summary")
+def support_LMM_summary():
+    support_summary = SupportAgent(model="phi-3.1-mini-4k-instruct").run()
+    return support_summary
+
+
 @router.get("/summary")
 def support_summary():
     conn = get_db_connection()
-
-    total_open = conn.execute("""
-         SELECT COUNT(*) AS count
-         FROM support_tickets
-         WHERE date_closed = ""
-    """).fetchone()["count"]
-
-    common_issues = conn.execute("""
-        SELECT category, COUNT(*) AS count
-        FROM support_tickets WHERE date_closed = ""
-        GROUP BY category
-        ORDER BY count
-        DESC LIMIT 5 
+    tickets_by_status = conn.execute("""
+        SELECT status, COUNT(*) AS ticket_count
+        FROM support_tickets
+        GROUP BY status;  
     """).fetchall()
 
-    priority_counts = conn.execute("""
-        SELECT priority, COUNT(*) AS count
+    average_resolution_time_by_priority = conn.execute("""
+        SELECT priority, AVG(resolution_time_hours) AS avg_resolution
         FROM support_tickets
-        WHERE date_closed = ""
         GROUP BY priority
+        ORDER BY avg_resolution ASC;
     """).fetchall()
 
-    sample_tickets = conn.execute("""
-        SELECT customer_id, category, priority, ticket_description
+    tickets_per_customer_top_10 = conn.execute("""
+        SELECT customer_id, COUNT(*) AS ticket_count
         FROM support_tickets
-        WHERE date_closed = "" LIMIT 10
+        GROUP BY customer_id
+        ORDER BY ticket_count DESC
+        LIMIT 10;                                
+    """).fetchall()
+
+    tickets_per_category = conn.execute("""
+        SELECT category, COUNT(*) AS ticket_count
+        FROM support_tickets
+        GROUP BY category
+        ORDER BY ticket_count DESC; 
+    """).fetchall()
+
+    sentiment_analysis_summary = conn.execute("""
+        SELECT customer_sentiment, COUNT(*) AS count
+        FROM support_tickets
+        GROUP BY customer_sentiment
+        ORDER BY count DESC; 
     """).fetchall()
 
     conn.close()
     return {
-        "total_open_tickets": total_open,
-        "top_issues": [dict(row) for row in common_issues],
-        "tickets_by_priority": [dict(row) for row in priority_counts],
-        "sample_tickets": [dict(row) for row in sample_tickets],
+        "tickets_by_status": [dict(row) for row in tickets_by_status],
+        "average_resolution_time_by_priority": [
+            dict(row) for row in average_resolution_time_by_priority
+        ],
+        "tickets_per_customer_top_10": [
+            dict(row) for row in tickets_per_customer_top_10
+        ],
+        "tickets_per_category": [dict(row) for row in tickets_per_category],
+        "sentiment_analysis_summary": [dict(row) for row in sentiment_analysis_summary],
     }

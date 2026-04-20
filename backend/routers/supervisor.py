@@ -34,6 +34,16 @@ def supervisor_rag_test():
     return {"query": test_query, "supervisor_response": results}
 
 
+@router.get("/overview")
+def agent_summary():
+    supervisor = SupervisorAgent()
+    results = supervisor.run_all()
+    return {
+        "message": "Supervisor agent overview from all agent data",
+        "results": results,
+    }
+
+
 @router.post("/create-chart-chat")
 async def supervisor_chart_chat(request: Request):
     body = await request.json()

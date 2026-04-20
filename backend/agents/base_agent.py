@@ -1,5 +1,6 @@
-import requests
 import json
+
+import requests
 
 
 class BaseAgent:
@@ -44,9 +45,10 @@ class BaseAgent:
                         {"role": "user", "content": prompt},
                     ],
                     "temperature": 0.4,
-                    "max_tokens": 300,
+                    "max_tokens": 500,
+                    "stop": ["<|end|>", "<|endoftext|>", "<|assistant|>"],
                 },
-                timeout=60,
+                timeout=240,
             )
             response.raise_for_status()
             result = response.json()

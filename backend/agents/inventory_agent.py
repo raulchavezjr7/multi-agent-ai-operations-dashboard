@@ -1,5 +1,6 @@
-from .base_agent import BaseAgent
 import json
+
+from .base_agent import BaseAgent
 
 
 class InventoryAgent(BaseAgent):
@@ -13,7 +14,7 @@ class InventoryAgent(BaseAgent):
     def build_prompt(self, data: dict):
         return (
             "You are the Inventory Agent for a operations dashboard.\n"
-            "Analyze the following inventory summary data.\n"
+            "Analyze the following SQL query results.\n"
             "Focus only on insights that are genuinely meaningful. "
             "Base your observations on what the data clearly suggests, and avoid speculation. "
             "Prioritize clarity and usefulness over completeness.\n\n"

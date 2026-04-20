@@ -3,11 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend.routers import (
     accounting,
-    agents,
     charts,
     chat,
     inventory,
     operations,
+    overview,
     rag,
     sales,
     sql,
@@ -26,11 +26,11 @@ app.add_middleware(
 )
 
 app.include_router(accounting.router)
-app.include_router(agents.router)
 app.include_router(chat.router)
 app.include_router(charts.router)
 app.include_router(inventory.router)
 app.include_router(operations.router)
+app.include_router(overview.router)
 app.include_router(rag.router)
 app.include_router(sales.router)
 app.include_router(sql.router)
