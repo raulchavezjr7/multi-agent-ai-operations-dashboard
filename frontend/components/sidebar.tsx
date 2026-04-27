@@ -20,22 +20,6 @@ export default function Sidebar() {
           Visualizations
         </Link>
         <Link
-          href="/dashboard/test-rag"
-          className={cn(
-            "px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground",
-          )}
-        >
-          Supervisor Test with Rag
-        </Link>
-        <Link
-          href="/dashboard/database"
-          className={cn(
-            "px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground",
-          )}
-        >
-          Database Viewer
-        </Link>
-        <Link
           href="/dashboard/daily-summary"
           className={cn(
             "px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground",
@@ -48,6 +32,23 @@ export default function Sidebar() {
           className="px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground"
         >
           Chatbot
+        </Link>
+        <Link
+          href="/dashboard/database"
+          className={cn(
+            "px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground",
+          )}
+        >
+          Database Viewer
+        </Link>
+
+        <Link
+          href="/dashboard/load-documents"
+          className={cn(
+            "px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground",
+          )}
+        >
+          Load Documents
         </Link>
       </nav>
     </aside>
