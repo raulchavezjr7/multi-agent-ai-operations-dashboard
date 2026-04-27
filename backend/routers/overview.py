@@ -2,7 +2,7 @@ from fastapi import APIRouter
 
 from backend.overview_nosql_helper import get_all_overview
 
-router = APIRouter()
+router = APIRouter(prefix="/overview", tags=["Overview"])
 
 
 @router.get("/overview/all")

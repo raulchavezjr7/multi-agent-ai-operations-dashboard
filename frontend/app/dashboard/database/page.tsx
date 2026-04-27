@@ -46,12 +46,12 @@ export default function DatabasePage() {
       <Textarea
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="h-32"
+        className="h-32 bg-muted/30"
       ></Textarea>
       <Button onClick={runQuery}>{loading ? "Running..." : "Run Query"}</Button>
 
       {data ? (
-        <Card className="p-4">
+        <Card className="p-4 bg-muted/30">
           <Table>
             <TableHeader>
               <TableRow>

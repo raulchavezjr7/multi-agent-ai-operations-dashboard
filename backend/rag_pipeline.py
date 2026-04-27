@@ -1,14 +1,14 @@
 import os
-from backend.lmstudio_llm import LMStudioLLM
+
+from backend.conversation_memory import clear_session, retrieve_history, store_message
+from backend.rag_llm import RagLLM
 from backend.shared_vector_memory import vector_store
-from backend.conversation_memory import store_message, retrieve_history
-from backend.conversation_memory import clear_session
 
 
 class RAGPipeline:
     def __init__(self, persist_dir="./rag_db"):
         self.vector_store = vector_store
-        self.llm = LMStudioLLM()
+        self.llm = RagLLM()
 
     def query(self, question, session_id: str, k=4):
         store_message(session_id, "user", question)

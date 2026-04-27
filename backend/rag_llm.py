@@ -1,10 +1,11 @@
 from typing import Any, ClassVar
+
 import requests
 from langchain_core.language_models import LLM
 
 
-class LMStudioLLM(LLM):
-    model: ClassVar[str] = "phi-3.1-mini-4k-instruct"
+class RagLLM(LLM):
+    model: ClassVar[str] = "meta-llama-3.1-8b-instruct"
 
     @property
     def _llm_type(self) -> str:

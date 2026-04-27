@@ -127,8 +127,10 @@ class SupervisorAgent:
                 "role": "system",
                 "content": (
                     "You are the Supervisor Agent for a operation dashboard."
-                    "Keep responses concise, structured, and under 500 tokens."
+                    "You are not using a rag pipeline."
+                    "Keep responses concise, structured, and under 800 tokens."
                     "Avoid filler, avoid repeating the prompt, and keep responses concise."
+                    "Format text if properly"
                 ),
             },
             *self.conversation,
@@ -141,13 +143,85 @@ class SupervisorAgent:
                     "model": self.model,
                     "messages": messages,
                     "temperature": 0.7,
-                    "max_tokens": 500,
+                    "max_tokens": 800,
                 },
-                timeout=120,
+                timeout=240,
             )
             response.raise_for_status()
             result = response.json()
-            return result["choices"][0]["message"]["content"]
+            assistant_reply = result["choices"][0]["message"]["content"]
+
+            self.conversation.append({"role": "assistant", "content": assistant_reply})
+
+            return assistant_reply
+        except Exception as e:
+            return f"LLM error {e}"
+
+    def call_llm_semi_rag(self, prompt: str):
+        rag_results = rag_agent_resources(prompt)
+        answer = rag_results["answer"]
+        sources = rag_results["sources"]
+
+        if sources:
+            source_list = "\n".join(
+                f"- {src.get('file', 'unknown')}" for src in sources
+            )
+            rag_context = (
+                f"RAG WORKER OUTPUT:\n{answer}\n\nSOURCES PROVIDED:\n{source_list}"
+            )
+        else:
+            rag_context = (
+                f"RAG WORKER OUTPUT:\n{answer}\n\nNo internal documents were relevant."
+            )
+
+        combined_input = (
+            f"USER QUESTION: {prompt}\n\n"
+            f"{rag_context}\n\n"
+            f"Please provide the final polished response based on the rules above."
+            f"Remember always present a short 'Sources Used' section at the end indicating what Rag worker output."
+            f"Use a new line for the source used."
+        )
+
+        self.conversation.append({"role": "user", "content": combined_input})
+
+        messages = [
+            {
+                "role": "system",
+                "content": (
+                    "You are the Supervisor Agent for an operations dashboard. "
+                    "You receive two inputs: (1) the user's question and (2) an answer produced by a RAG worker. "
+                    "Your job is to produce a final response for the user.\n\n"
+                    "Rules:\n"
+                    "- Format text if properly"
+                    "- Integrate or infer based on the RAG information.\n"
+                    "- Always present a short 'Sources Used' section at the end indicating what Rag worker output.\n"
+                    "- Present a short 'Sources Used' section at the end.\n"
+                    "- If no internal documents were used, state that clearly.\n"
+                    "- Keep responses concise, professional, and under 800 tokens.\n"
+                    "- Do not repeat the user prompt or use filler phrases."
+                ),
+            },
+            *self.conversation,
+        ]
+
+        try:
+            response = requests.post(
+                "http://127.0.0.1:1234/v1/chat/completions",
+                json={
+                    "model": self.model,
+                    "messages": messages,
+                    "temperature": 0.7,
+                    "max_tokens": 800,
+                },
+                timeout=480,
+            )
+            response.raise_for_status()
+            result = response.json()
+            assistant_reply = result["choices"][0]["message"]["content"]
+
+            self.conversation.append({"role": "assistant", "content": assistant_reply})
+
+            return assistant_reply
         except Exception as e:
             return f"LLM error {e}"
 
@@ -172,6 +246,8 @@ class SupervisorAgent:
             f"USER QUESTION: {prompt}\n\n"
             f"{rag_context}\n\n"
             f"Please provide the final polished response based on the rules above."
+            f"Remember always present a short 'Sources Used' section at the end indicating what Rag worker output."
+            f"Use a new line for the source used."
         )
 
         self.conversation.append({"role": "user", "content": combined_input})
@@ -184,10 +260,11 @@ class SupervisorAgent:
                     "You receive two inputs: (1) the user's question and (2) an answer produced by a RAG worker. "
                     "Your job is to produce a final, polished response for the user.\n\n"
                     "Rules:\n"
+                    "- Format text if properly"
                     "- Integrate RAG information clearly and accurately.\n"
-                    "- Present a short 'Sources Used' section at the end.\n"
+                    "- Always present a short 'Sources Used' section at the end indicating what Rag worker output.\n"
                     "- If no internal documents were used, state that clearly.\n"
-                    "- Keep responses concise, professional, and under 500 tokens.\n"
+                    "- Keep responses concise, professional, and under 800 tokens.\n"
                     "- Do not repeat the user prompt or use filler phrases."
                 ),
             },
@@ -200,14 +277,18 @@ class SupervisorAgent:
                 json={
                     "model": self.model,
                     "messages": messages,
-                    "temperature": 0.7,
-                    "max_tokens": 500,
+                    "temperature": 0.3,
+                    "max_tokens": 800,
                 },
-                timeout=120,
+                timeout=480,
             )
             response.raise_for_status()
             result = response.json()
-            return result["choices"][0]["message"]["content"]
+            assistant_reply = result["choices"][0]["message"]["content"]
+
+            self.conversation.append({"role": "assistant", "content": assistant_reply})
+
+            return assistant_reply
         except Exception as e:
             return f"LLM error {e}"
 

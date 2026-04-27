@@ -46,7 +46,7 @@ export function ModifyGraphDialog({
     <>
       <Dialog>
         <DialogTrigger asChild>
-          <Button variant="outline" size="sm" className="w-fit">
+          <Button size="sm" className="w-fit">
             <SquarePen className="mr-1 h-4 w-4" />
             Customize View
           </Button>
@@ -108,8 +108,8 @@ export function ModifyGraphDialog({
       {addChart && (
         <LlmAddDialog
           onChartSpecGenerated={(spec) => {
-            onCreate?.(spec); // save it
-            setEditingChart(spec); // immediately open edit dialog
+            onCreate?.(spec);
+            setEditingChart(spec);
           }}
         />
       )}
