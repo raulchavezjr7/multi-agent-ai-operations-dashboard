@@ -6,7 +6,7 @@ from .base_agent import BaseAgent
 class AccountingAgent(BaseAgent):
     def __init__(self, model="phi-3.1-mini-4k-instruct"):
         super().__init__(
-            name="Support Agent",
+            name="Accounting Agent",
             api_endpoint="http://127.0.0.1:8000/accounting/summary",
             model=model,
         )

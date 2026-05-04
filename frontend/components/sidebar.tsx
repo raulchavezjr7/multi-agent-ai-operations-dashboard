@@ -41,7 +41,12 @@ export default function Sidebar() {
         >
           Database Viewer
         </Link>
-
+        <Link
+          href="/dashboard/agent-logging"
+          className="px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground"
+        >
+          Agent Logs
+        </Link>
         <Link
           href="/dashboard/load-documents"
           className={cn(

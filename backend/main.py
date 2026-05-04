@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend.routers import (
     accounting,
+    agent_logs,
     charts,
     chat,
     inventory,
@@ -26,6 +27,7 @@ app.add_middleware(
 )
 
 app.include_router(accounting.router)
+app.include_router(agent_logs.router)
 app.include_router(chat.router)
 app.include_router(charts.router)
 app.include_router(inventory.router)

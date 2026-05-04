@@ -96,7 +96,7 @@ export default function RagAdminPage() {
     <div className="flex flex-col gap-6 max-w-2xl mx-auto py-8">
       <h1 className="text-2xl font-semibold">RAG Document Manager</h1>
 
-      <Card className="p-4 space-y-4">
+      <Card className="p-4 space-y-4 bg-muted/30">
         <div>
           <h2 className="font-medium mb-1">1. Upload documents</h2>
           <p className="text-sm text-muted-foreground">
@@ -140,7 +140,7 @@ export default function RagAdminPage() {
         )}
       </Card>
 
-      <Card className="p-4 space-y-4">
+      <Card className="p-4 space-y-4 bg-muted/30">
         <div>
           <h2 className="font-medium mb-1">2. Initialize RAG</h2>
           <p className="text-sm text-muted-foreground">

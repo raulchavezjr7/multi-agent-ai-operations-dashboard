@@ -4,6 +4,7 @@ from pathlib import Path
 
 import requests
 
+from backend.log_helper import log_agent_event
 from backend.overview_nosql_helper import update_overview
 
 from .accounting_agent import AccountingAgent
@@ -60,6 +61,28 @@ class SupervisorAgent:
         self.unload_model(self.model)
         self.conversation = []
 
+    def log_agent(
+        self,
+        agent_role: str,
+        label: str,
+        request_type: str,
+        message_overview: str,
+        prompt_tokens: int,
+        completion_tokens: int,
+        prompt_desc: str,
+        prompt: str,
+    ):
+        log_agent_event(
+            agent_name="Supervisor Agent",
+            agent_role=agent_role,
+            label=label,
+            request_type=request_type,
+            message_overview=message_overview,
+            prompt_tokens=prompt_tokens,
+            completion_tokens=completion_tokens,
+            details={prompt_desc: prompt[:200]},
+        )
+
     def run_all(self):
 
         results = {
@@ -89,6 +112,7 @@ class SupervisorAgent:
         return self.call_llm_overview(prompt)
 
     def call_llm_overview(self, prompt: str):
+
         try:
             response = requests.post(
                 "http://127.0.0.1:1234/v1/chat/completions",
@@ -115,9 +139,41 @@ class SupervisorAgent:
             update_overview(
                 6, {"supervisor": result["choices"][0]["message"]["content"]}
             )
+
+            self.log_agent(
+                "supervisor",
+                "Processed",
+                "prompt",
+                "Daily overview request",
+                int(result["usage"]["prompt_tokens"]),
+                0,
+                "prompt_preview",
+                prompt,
+            )
+            self.log_agent(
+                "supervisor",
+                "Processed",
+                "response",
+                "Daily overview response",
+                0,
+                int(result["usage"]["total_tokens"]),
+                "response_preview",
+                result["choices"][0]["message"]["content"],
+            )
             return result["choices"][0]["message"]["content"]
         except Exception as e:
-            return f"LLM error {e}"
+            error_msg = f"Failed at LLM response: {str(e)}"
+            self.log_agent(
+                "supervisor",
+                "ERROR",
+                "error",
+                "Failed daily response",
+                0,
+                0,
+                "error details",
+                error_msg,
+            )
+            return f"LLM error {error_msg}"
 
     def call_llm(self, prompt: str):
 
@@ -149,15 +205,50 @@ class SupervisorAgent:
             )
             response.raise_for_status()
             result = response.json()
-            assistant_reply = result["choices"][0]["message"]["content"]
 
-            self.conversation.append({"role": "assistant", "content": assistant_reply})
-
-            return assistant_reply
+            self.conversation.append(
+                {
+                    "role": "assistant",
+                    "content": result["choices"][0]["message"]["content"],
+                }
+            )
+            self.log_agent(
+                "supervisor",
+                "Processed",
+                "prompt",
+                "Supervisor request",
+                int(result["usage"]["prompt_tokens"]),
+                0,
+                "prompt_preview",
+                prompt,
+            )
+            self.log_agent(
+                "supervisor",
+                "Processed",
+                "response",
+                "Supervisor response",
+                0,
+                int(result["usage"]["total_tokens"]),
+                "response_preview",
+                result["choices"][0]["message"]["content"],
+            )
+            return result["choices"][0]["message"]["content"]
         except Exception as e:
-            return f"LLM error {e}"
+            error_msg = f"Failed at LLM response: {str(e)}"
+            self.log_agent(
+                "supervisor",
+                "ERROR",
+                "error",
+                "Failed supervisor response",
+                0,
+                0,
+                "error details",
+                error_msg,
+            )
+            return f"LLM error {error_msg}"
 
     def call_llm_semi_rag(self, prompt: str):
+
         rag_results = rag_agent_resources(prompt)
         answer = rag_results["answer"]
         sources = rag_results["sources"]
@@ -218,13 +309,48 @@ class SupervisorAgent:
             )
             response.raise_for_status()
             result = response.json()
-            assistant_reply = result["choices"][0]["message"]["content"]
 
-            self.conversation.append({"role": "assistant", "content": assistant_reply})
+            self.conversation.append(
+                {
+                    "role": "assistant",
+                    "content": result["choices"][0]["message"]["content"],
+                }
+            )
 
-            return assistant_reply
+            self.log_agent(
+                "supervisor",
+                "Processed",
+                "prompt",
+                "Semi-rag supervisors request",
+                int(result["usage"]["prompt_tokens"]),
+                0,
+                "prompt_preview",
+                prompt,
+            )
+            self.log_agent(
+                "supervisor",
+                "Processed",
+                "response",
+                "Semi-rag supervisors response",
+                0,
+                int(result["usage"]["total_tokens"]),
+                "response_preview",
+                result["choices"][0]["message"]["content"],
+            )
+            return result["choices"][0]["message"]["content"]
         except Exception as e:
-            return f"LLM error {e}"
+            error_msg = f"Failed at LLM response: {str(e)}"
+            self.log_agent(
+                "supervisor",
+                "ERROR",
+                "error",
+                "Failed Semi-rag supervisors response",
+                0,
+                0,
+                "error details",
+                error_msg,
+            )
+            return f"LLM error {error_msg}"
 
     def call_llm_rag(self, prompt: str):
         rag_results = rag_agent_resources(prompt)
@@ -285,13 +411,48 @@ class SupervisorAgent:
             )
             response.raise_for_status()
             result = response.json()
-            assistant_reply = result["choices"][0]["message"]["content"]
 
-            self.conversation.append({"role": "assistant", "content": assistant_reply})
+            self.conversation.append(
+                {
+                    "role": "assistant",
+                    "content": result["choices"][0]["message"]["content"],
+                }
+            )
 
-            return assistant_reply
+            self.log_agent(
+                "supervisor",
+                "Processed",
+                "prompt",
+                "Full-rag supervisors request",
+                int(result["usage"]["prompt_tokens"]),
+                0,
+                "prompt_preview",
+                prompt,
+            )
+            self.log_agent(
+                "supervisor",
+                "Processed",
+                "response",
+                "Full-rag supervisors response",
+                0,
+                int(result["usage"]["total_tokens"]),
+                "response_preview",
+                result["choices"][0]["message"]["content"],
+            )
+            return result["choices"][0]["message"]["content"]
         except Exception as e:
-            return f"LLM error {e}"
+            error_msg = f"Failed at LLM response: {str(e)}"
+            self.log_agent(
+                "supervisor",
+                "ERROR",
+                "error",
+                "Failed Full-rag supervisors response",
+                0,
+                0,
+                "error details",
+                error_msg,
+            )
+            return f"LLM error {error_msg}"
 
     def call_chart_llm(self, prompt: str):
 
@@ -347,10 +508,42 @@ class SupervisorAgent:
                     "temperature": 0.5,
                     "max_tokens": 500,
                 },
-                timeout=120,
+                timeout=240,
             )
             response.raise_for_status()
             result = response.json()
+
+            self.log_agent(
+                "supervisor",
+                "Processed",
+                "prompt",
+                "Chart creation request",
+                int(result["usage"]["prompt_tokens"]),
+                0,
+                "prompt_preview",
+                prompt,
+            )
+            self.log_agent(
+                "supervisor",
+                "Processed",
+                "response",
+                "Chart creation response",
+                0,
+                int(result["usage"]["total_tokens"]),
+                "response_preview",
+                result["choices"][0]["message"]["content"],
+            )
             return result["choices"][0]["message"]["content"]
         except Exception as e:
-            return f"LLM error {e}"
+            error_msg = f"Failed at LLM response: {str(e)}"
+            self.log_agent(
+                "supervisor",
+                "ERROR",
+                "error",
+                "Failed Chart creation response",
+                0,
+                0,
+                "error details",
+                error_msg,
+            )
+            return f"LLM error {error_msg}"

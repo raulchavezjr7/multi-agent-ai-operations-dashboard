@@ -1,7 +1,7 @@
 import os
 
+from backend.agents.rag_llm import RagLLM
 from backend.conversation_memory import clear_session, retrieve_history, store_message
-from backend.rag_llm import RagLLM
 from backend.shared_vector_memory import vector_store
 
 
