@@ -5,6 +5,7 @@ import requests
 from backend.log_helper import log_agent_event
 
 
+# This is a Base Agent class that all domain agents inherit from. Supervisor and Rag agents do not inherit from this class.
 class BaseAgent:
     def __init__(
         self, name: str, api_endpoint: str, model: str = "phi-3.1-mini-4k-instruct"
@@ -13,6 +14,7 @@ class BaseAgent:
         self.api_endpoint = api_endpoint
         self.model = model
 
+    # This functions gets the overview data from the SQL ai_ops_database database
     def fetch_data(self):
         try:
             response = requests.get(self.api_endpoint)
@@ -22,6 +24,7 @@ class BaseAgent:
         except Exception as e:
             return {"error": f"Failed to fetch data: {e}"}
 
+    # This functions build the overview prompt
     def build_prompt(self, data: dict):
         return (
             f"You are the {self.name}. Analyze the following JSON data and "
@@ -29,6 +32,7 @@ class BaseAgent:
             f"DATA:\n{json.dumps(data, indent=2)}"
         )
 
+    # This function transfers data to log_helper.py to log agent activity
     def log_agent(
         self,
         agent_role: str,
@@ -51,6 +55,7 @@ class BaseAgent:
             details={prompt_desc: prompt[:200]},
         )
 
+    # This function calls LLM model and awaits response
     def call_llm(self, prompt: str):
         try:
             response = requests.post(
@@ -112,6 +117,7 @@ class BaseAgent:
             )
             return f"LLM error {error_msg}"
 
+    # This function runs the overview process
     def run(self):
         data = self.fetch_data()
         prompt = self.build_prompt(data)

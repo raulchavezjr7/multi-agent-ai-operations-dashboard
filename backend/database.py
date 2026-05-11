@@ -7,12 +7,14 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SCHEMA_FILE = Path(f"{BASE_DIR}/../database/schema.json")
 
 
+# This function connect to main ai_ops_database
 def get_db_connection():
     connection = sqlite3.connect("database/ai_ops_database.db")
     connection.row_factory = sqlite3.Row
     return connection
 
 
+# This function returns all tables and columns names
 def db_schema():
     conn = get_db_connection()
     cursor = conn.cursor()

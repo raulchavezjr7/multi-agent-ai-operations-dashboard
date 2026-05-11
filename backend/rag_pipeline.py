@@ -5,8 +5,10 @@ from backend.conversation_memory import clear_session, retrieve_history, store_m
 from backend.shared_vector_memory import vector_store
 
 
+# This class acts as a helper to create the RAG prompt used by rag_llm.py by adding retrieve vectors from Chroma to prompt
+#  and providing RAG context
 class RAGPipeline:
-    def __init__(self, persist_dir="./rag_db"):
+    def __init__(self):
         self.vector_store = vector_store
         self.llm = RagLLM()
 

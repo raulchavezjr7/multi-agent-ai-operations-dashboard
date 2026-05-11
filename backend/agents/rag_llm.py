@@ -6,6 +6,7 @@ from langchain_core.language_models import LLM
 from backend.log_helper import log_agent_event
 
 
+#  This is the base agent used for rag interpretation in rag_pipeline.py
 class RagLLM(LLM):
     model: ClassVar[str] = "meta-llama-3.1-8b-instruct"
 
@@ -13,6 +14,7 @@ class RagLLM(LLM):
     def _llm_type(self) -> str:
         return "lmstudio"
 
+    # This function transfers data to log_helper.py to log agent activity
     def log_agent(
         self,
         agent_role: str,
@@ -35,6 +37,7 @@ class RagLLM(LLM):
             details={prompt_desc: prompt[:200]},
         )
 
+    # This functions call the model and awaits response rag interpretation
     def _call(self, prompt, stop=None, run_manager=None, **kwargs: Any):
         try:
             response = requests.post(
@@ -44,12 +47,16 @@ class RagLLM(LLM):
                     "messages": [
                         {
                             "role": "system",
-                            "content": "Use only the provided context to answer.",
+                            "content": (
+                                "Use only the provided context to answer."
+                                "Keep responses concise, structured, and under 300 tokens."
+                            ),
                         },
                         {"role": "user", "content": prompt},
                     ],
                     "temperature": 0.2,
                     "max_tokens": 400,
+                    "stop": ["<|end|>", "<|endoftext|>", "<|assistant|>"],
                 },
             )
 

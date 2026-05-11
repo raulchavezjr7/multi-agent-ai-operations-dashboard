@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function DashboardHome() {
   const [loading, setLoading] = useState(false);
 
+  // Functions retrieves overview
   const handleDailyOverview = async () => {
     setLoading(true);
     try {

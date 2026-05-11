@@ -3,6 +3,7 @@ import json
 from .base_agent import BaseAgent
 
 
+# This file creates the Inventory Agent using inheritance from the Base Agent
 class InventoryAgent(BaseAgent):
     def __init__(self, model="phi-3.1-mini-4k-instruct"):
         super().__init__(

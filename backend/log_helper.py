@@ -4,6 +4,7 @@ from datetime import datetime
 from backend.log_database import get_connection
 
 
+# This function helps log agent events
 def log_agent_event(
     agent_name: str,
     agent_role: str,

@@ -1,8 +1,9 @@
+from langchain_chroma import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_core.embeddings import Embeddings
-from langchain_chroma import Chroma
 
 
+# This class wraps LangChains interface for embedding models
 class LazyEmbedder(Embeddings):
     _model = None
 
@@ -24,6 +25,7 @@ class LazyEmbedder(Embeddings):
 
 embedder = LazyEmbedder()
 
+# Vector database configuration
 vector_store = Chroma(
     collection_name="shared_vector_memory_bucket",
     embedding_function=embedder,

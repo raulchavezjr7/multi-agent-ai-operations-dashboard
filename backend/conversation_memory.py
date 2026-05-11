@@ -5,6 +5,7 @@ from langchain_core.documents import Document
 from backend.shared_vector_memory import vector_store
 
 
+# This functions stores LLM query and responses to the vector memory
 def store_message(session_id: str, role: str, content: str):
     doc = Document(
         page_content=content,
@@ -18,6 +19,7 @@ def store_message(session_id: str, role: str, content: str):
     vector_store.add_documents([doc])
 
 
+# This function retrieves LLM query and responses to the vector memory
 def retrieve_history(session_id: str, k: int = 6):
     retriever = vector_store.as_retriever(
         search_kwargs={
@@ -28,6 +30,7 @@ def retrieve_history(session_id: str, k: int = 6):
     return retriever.invoke("conversation history")
 
 
+#  This functions removes LLM query and responses to the vector memory for a given conversation
 def clear_session(session_id: str):
     vector_store._collection.delete(
         where={"$and": [{"type": "conversation"}, {"session_id": session_id}]}

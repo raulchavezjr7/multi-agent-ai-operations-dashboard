@@ -16,6 +16,7 @@ from backend.routers import (
     support,
 )
 
+# This file sets up routes and middleware
 app = FastAPI(title="Ops Dashboard Backend API")
 
 app.add_middleware(

@@ -23,6 +23,7 @@ export default function DatabasePage() {
   const [data, setData] = useState<QueryResult | null>(null);
   const [loading, setLoading] = useState(false);
 
+  // This function handles query request
   async function runQuery() {
     setLoading(true);
     try {

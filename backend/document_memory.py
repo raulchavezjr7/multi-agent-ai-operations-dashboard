@@ -1,13 +1,16 @@
 import os
+
 from langchain_community.document_loaders import (
     DirectoryLoader,
-    TextLoader,
     PyPDFDirectoryLoader,
+    TextLoader,
 )
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+
 from backend.shared_vector_memory import vector_store
 
 
+# These functions help load new files into vector memory
 def load_documents(folder: str = "./docs"):
     txt_loader = DirectoryLoader(
         f"{folder}/txt", glob="**/*.txt", loader_cls=TextLoader

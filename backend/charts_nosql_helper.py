@@ -5,6 +5,7 @@ from tinydb import Query, TinyDB
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "..", "database", "charts.json")
 
+# This file is a set of helper functions to manage charts.json
 db = TinyDB(DB_PATH)
 Chart = Query()
 

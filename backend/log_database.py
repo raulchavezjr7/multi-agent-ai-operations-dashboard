@@ -6,12 +6,14 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = Path(f"{BASE_DIR}/../database/agent_logs.db")
 
 
+# This function connect to agent_logs database
 def get_connection():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
 
 
+# This functions creates database
 def init_db():
     conn = get_connection()
     cursor = conn.cursor()

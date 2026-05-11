@@ -9,6 +9,7 @@ db = TinyDB(DB_PATH)
 Overview = Query()
 
 
+# These functions are help manage overview.json
 def get_all_overview():
     return db.all()
 

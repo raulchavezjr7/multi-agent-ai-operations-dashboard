@@ -7,10 +7,10 @@ import requests
 from backend.log_helper import log_agent_event
 from backend.overview_nosql_helper import update_overview
 
+from ..rag_helper import rag_agent_resources
 from .accounting_agent import AccountingAgent
 from .inventory_agent import InventoryAgent
 from .operations_agent import OperationsAgent
-from .rag_agent import rag_agent_resources
 from .sales_agent import SalesAgent
 from .support_agent import SupportAgent
 
@@ -18,6 +18,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SCHEMA_FILE = Path(f"{BASE_DIR}/../../database/schema.json")
 
 
+#  This is the Supervisors Agents class
 class SupervisorAgent:
     def __init__(self):
         self.model = "meta-llama-3.1-8b-instruct"
@@ -28,12 +29,14 @@ class SupervisorAgent:
         self.accounting_agent = AccountingAgent(model="phi-3.1-mini-4k-instruct")
         self.operations_agent = OperationsAgent(model="phi-3.1-mini-4k-instruct")
 
+    # This load the model on LM Studios
     def load_model(self, model_name: str):
         return requests.post(
             "http://127.0.0.1:1234/api/v1/models/load",
             json={"model": model_name},
         ).json()
 
+    # This unloads the model from LM Studios
     def unload_model(self, model_name: str):
         try:
             response = requests.get("http://127.0.0.1:1234/api/v1/models")
@@ -57,10 +60,12 @@ class SupervisorAgent:
         except Exception as e:
             return f"Unload error {e}"
 
+    # This is a helper function to unload model
     def end_task_mode(self):
         self.unload_model(self.model)
         self.conversation = []
 
+    # This function transfers data to log_helper.py to log agent activity
     def log_agent(
         self,
         agent_role: str,
@@ -83,6 +88,8 @@ class SupervisorAgent:
             details={prompt_desc: prompt[:200]},
         )
 
+    #  This functions triggers all agents to run for overview process.
+    #  It also uses the responses to create a prompt to run supervisors overview query.
     def run_all(self):
 
         results = {
@@ -111,6 +118,7 @@ class SupervisorAgent:
         )
         return self.call_llm_overview(prompt)
 
+    # This functions call the model and awaits response for overview process.
     def call_llm_overview(self, prompt: str):
 
         try:
@@ -175,6 +183,7 @@ class SupervisorAgent:
             )
             return f"LLM error {error_msg}"
 
+    # This function calls model and awaits response for chat process
     def call_llm(self, prompt: str):
 
         self.conversation.append({"role": "user", "content": prompt})
@@ -247,6 +256,7 @@ class SupervisorAgent:
             )
             return f"LLM error {error_msg}"
 
+    # This function calls model and awaits response for chat process using semi-rag
     def call_llm_semi_rag(self, prompt: str):
 
         rag_results = rag_agent_resources(prompt)
@@ -268,8 +278,8 @@ class SupervisorAgent:
         combined_input = (
             f"USER QUESTION: {prompt}\n\n"
             f"{rag_context}\n\n"
-            f"Please provide the final polished response based on the rules above."
-            f"Remember always present a short 'Sources Used' section at the end indicating what Rag worker output."
+            f"Please provide the final polished response based on the rules above. "
+            f"Remember always present a short 'Sources Used' section using the SOURCES PROVIDED. "
             f"Use a new line for the source used."
         )
 
@@ -279,16 +289,16 @@ class SupervisorAgent:
             {
                 "role": "system",
                 "content": (
-                    "You are the Supervisor Agent for an operations dashboard. "
+                    "You are the Supervisor Agent for an operations dashboard that sometimes gets context from a RAG agent. "
                     "You receive two inputs: (1) the user's question and (2) an answer produced by a RAG worker. "
-                    "Your job is to produce a final response for the user."
-                    "If no RAG input is present, then give a response without it, but tell the user you are not using RAG.\n\n"
+                    "Your job is to produce a final response for the user. "
+                    "You might not get context from the RAG agent, if so response as you are a regular chat bot"
                     "Rules:\n"
                     "- Format text if properly"
                     "- Integrate or infer based on the RAG information if applicable.\n"
-                    "- Always present a short 'Sources Used' section at the end indicating what Rag worker output.\n"
+                    "- Always present a short 'Sources Used' section using the SOURCES PROVIDED.\n"
+                    "- If no RAG agent context is present, then respond without it, but tell the user you did not get RAG context.\n\n"
                     "- Present a short 'Sources Used' section at the end.\n"
-                    "- If no internal documents were used, state that clearly.\n"
                     "- Keep responses concise, professional, and under 800 tokens.\n"
                     "- Do not repeat the user prompt or use filler phrases."
                 ),
@@ -352,6 +362,7 @@ class SupervisorAgent:
             )
             return f"LLM error {error_msg}"
 
+    # This function calls model and awaits response for chat process using full rag
     def call_llm_rag(self, prompt: str):
         rag_results = rag_agent_resources(prompt)
         answer = rag_results["answer"]
@@ -372,8 +383,8 @@ class SupervisorAgent:
         combined_input = (
             f"USER QUESTION: {prompt}\n\n"
             f"{rag_context}\n\n"
-            f"Please provide the final polished response based on the rules above."
-            f"Remember always present a short 'Sources Used' section at the end indicating what Rag worker output."
+            f"You must provide the final polished response based on the rules above."
+            f"Remember always present a short 'Sources Used' section using the SOURCES PROVIDED section."
             f"Use a new line for the source used."
         )
 
@@ -389,7 +400,7 @@ class SupervisorAgent:
                     "Rules:\n"
                     "- Format text if properly"
                     "- Integrate RAG information clearly and accurately.\n"
-                    "- Always present a short 'Sources Used' section at the end indicating what Rag worker output.\n"
+                    "- Always present a short 'Sources Used' section using the SOURCES PROVIDED section.\n"
                     "- If no internal documents were used, state that clearly.\n"
                     "- Keep responses concise, professional, and under 800 tokens.\n"
                     "- Do not repeat the user prompt or use filler phrases."
@@ -454,6 +465,7 @@ class SupervisorAgent:
             )
             return f"LLM error {error_msg}"
 
+    # This function calls model and awaits response for creating new charts in visualization tab
     def call_chart_llm(self, prompt: str):
 
         self.conversation.append({"role": "user", "content": prompt})
@@ -461,40 +473,40 @@ class SupervisorAgent:
 
         chartDefObject = (
             "{"
-            '"id": string,'
-            '"name": string,'
-            '"sql": string,'
-            '"type": string,'
-            '"xField": string,'
-            '"yField": string,'
-            '"color"?: string,'
-            '"colors"?: string[]'
+            '"id": string, '
+            '"name": string, '
+            '"sql": string, '
+            '"type": string, '
+            '"xField": string, '
+            '"yField": string, '
+            '"color"?: string, '
+            '"colors"?: string[] '
             "}"
         )
 
         chartDefObjectExplanation = (
-            "id is a unique identifier, snake_case, add random number to id for uniqueness"
-            "name is a human-readable chart name"
-            "sql is a valid SQLite SELECT query"
-            "type is either a bar, line, area, region, heatmap, or pie"
-            "xField is a column name used for x-axis or category"
-            "yField is a column name used for y-axis or value"
-            "color is a single color (hex) that is only used in bar, line, area, and region"
-            "colors is a multiple colors only for pie"
+            "id is a unique identifier, snake_case, add random number to id for uniqueness \n"
+            "name is a human-readable chart name \n"
+            "sql is a valid SQLite SELECT query \n"
+            "type is either a bar, line, area, region, heatmap, or pie \n"
+            "xField is a column name used for x-axis or category \n"
+            "yField is a column name used for y-axis or value \n"
+            "color is a single color (hex) that is only used in bar, line, area, and region \n"
+            "colors is a multiple colors only for pie \n"
         )
 
         messages = [
             {
                 "role": "system",
                 "content": (
-                    "Your ONLY job is to output a valid ChartDef object to help the user with creating new visualization charts."
+                    "Your ONLY job is to output a valid ChartDef object to help the user with creating new visualization charts. "
                     f"Database Schema: {schema}"
                     f"ChartDef Object Format: {chartDefObject}"
                     f"ChartDef Object Rules: {chartDefObjectExplanation}"
-                    "Rules:"
-                    "You MUST return a ChartDef Object in the exact format shown in the brackets of ChartDef Object Format"
-                    "You MUST NOT return explanations, reasoning, markdown, or commentary."
-                    "You MUST reference only tables and columns that exist in the schema."
+                    "Rules: "
+                    "You MUST return a ChartDef Object in the exact format shown in the brackets of ChartDef Object Format. "
+                    "You MUST NOT return explanations, reasoning, markdown, or commentary. "
+                    "You MUST reference only tables and columns that exist in the schema. "
                 ),
             },
             *self.conversation,

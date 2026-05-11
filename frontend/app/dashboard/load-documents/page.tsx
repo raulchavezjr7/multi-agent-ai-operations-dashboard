@@ -11,12 +11,14 @@ export default function RagAdminPage() {
   const [uploading, setUploading] = useState(false);
   const [initializing, setInitializing] = useState(false);
 
+  // This function triggers when a file is added or changed
   function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
     setStatus(null);
     setError(null);
     setFiles(e.target.files);
   }
 
+  // This functions handles files uploads
   async function handleUpload() {
     if (!files || files.length === 0) {
       setError("Please select at least one .txt or .pdf file.");
@@ -65,6 +67,7 @@ export default function RagAdminPage() {
     }
   }
 
+  // Function starts the RAG pipeline to embedded and reindex files
   async function handleInitRag() {
     setInitializing(true);
     setError(null);
