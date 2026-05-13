@@ -54,7 +54,7 @@ class RagLLM(LLM):
                         },
                         {"role": "user", "content": prompt},
                     ],
-                    "temperature": 0.2,
+                    "temperature": 0.3,
                     "max_tokens": 400,
                     "stop": ["<|end|>", "<|endoftext|>", "<|assistant|>"],
                 },

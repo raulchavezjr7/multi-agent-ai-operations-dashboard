@@ -1,0 +1,1468 @@
+Standard Operating Procedures
+(SOP)
+for
+Warehouse & Inventory Management
+in
+UNHCR
+Version 1.0, last update: 18 Dec 2013
+SOP – Warehouse & Inventory Management in UNHCR
+Version 1.0, last update: 18 Dec 2013 Page 2 of 38
+Prepared by UNHCR Division of Emergency, Security and Supply (DESS) – Supply
+Management and Logistics Service (SMLS)
+2013 UNITED NATIONS HIGH COMMISSIONER FOR REFUGEES
+This SOP has been prepared by the Office of the United Nations High Commissioner for
+Refugees for use by their staff and the staff of implementing partners (hereafter referred as
+Partners) and Commercial Companies in the field. Reproduction is authorized, except for
+commercial purposes, provided that the source is acknowledged.
+Suggestions for corrections or improvements can be sent to:
+DESS – SMLS, UNHCR, Budapest
+HQSF00@unhcr.org
+SOP – Warehouse & Inventory Management in UNHCR
+Table of Contents
+Version 1.0, last update: 18 Dec 2013 Page 3 of 38
+Table of Contents
+SECTION 1: INTRODUCTION ..................................................................................................................... 4
+SECTION 2: DEFINITIONS AND SCOPE ................................................................................................... 5
+SECTION 3: TARGET AUDIENCE & DOCUMENT REFERENCES ........................................................ 6
+SECTION 4: DOCUMENTS .......................................................................................................................... 7
+SECTION 5: SHARED RESPONSIBILITIES OF THE WAREHOUSE AND THE UNHCR OFFICE..... 9
+5.1 DAILY TASKS ................................................................................................................................................ 9
+5.2 MONTHLY TASKS ......................................................................................................................................... 9
+5.3 QUARTERLY TASKS ................................................................................................................................... 10
+5.4 YEARLY TASKS ........................................................................................................................................... 10
+5.5 HANDOVER OF RESPONSIBILITIES .......................................................................................................... 11
+5.6 WAREHOUSE – MAIN INFORMATION SHEET .......................................................................................... 11
+SECTION 6: RESPONSIBILITIES OF THE UNHCR OFFICE .................................................................12
+6.1 KEY ROLES & RESPONSIBILITIES............................................................................................................. 12
+6.2 RESPONSIBILITIES OF THE INVENTORY FOCAL POINT ........................................................................ 12
+6.3 PROCESSES FOR RECEIVING AND RELEASING INVENTORY ............................................................... 14
+6.4 RECTIFYING ERRORS ................................................................................................................................. 14
+6.5 RETURN OF GOODS .................................................................................................................................... 15
+6.6 RECORDING OF TRANSACTIONS IN MSRP .............................................................................................. 16
+6.7 DOCUMENT MANAGEMENT ..................................................................................................................... 16
+6.8 INSURANCE ................................................................................................................................................. 16
+SECTION 7: RESPONSIBILITIES OF THE WAREHOUSE .....................................................................17
+7.1 KEY ROLES & RESPONSIBILITIES............................................................................................................. 17
+7.2 RESPONSIBILITIES OF THE WAREHOUSE MANAGER ........................................................................... 18
+7.3 LAYOUT & STORAGE PLAN....................................................................................................................... 19
+7.4 SAFETY AND SECURITY OF STOCK ......................................................................................................... 20
+7.5 STACKING .................................................................................................................................................... 22
+7.6 WAREHOUSE SUPPLIES & EQUIPMENT ................................................................................................... 23
+7.7 RECEIVING CONSIGNMENTS .................................................................................................................... 24
+7.8 RETURN OF GOODS .................................................................................................................................... 27
+7.9 RELEASE OF GOODS ................................................................................................................................... 28
+7.10 DOCUMENT MANAGEMENT & FILING................................................................................................... 29
+7.11 MAINTAINING THE PREMISES ................................................................................................................ 30
+SECTION 8: PROCESS OVERVIEW .........................................................................................................31
+SECTION 9: LIST OF ABBREVIATIONS...................................................................................................32
+SECTION 10: FORMS...................................................................................................................................33
+WAYBILL ........................................................................................................................................................... 33
+GOODS RECEIVING NOTE ............................................................................................................................... 34
+STOCK CARD ..................................................................................................................................................... 35
+BIN/STACK CARD ............................................................................................................................................. 36
+INCOMING SHIPMENTS ................................................................................................................................... 37
+OUTGOING SHIPMENTS ................................................................................................................................... 38
+SOP – Warehouse & Inventory Management in UNHCR
+Section 1: Introduction
+Version 1.0, last update: 18 Dec 2013 Page 4 of 38
+Section 1: Introduction
+Introduction UNHCR’s inventories represent a significant investment and following the
+implementation of IPSAS1 their monetary value is disclosed in UNHCR’s
+financial statements.
+It is, therefore, the duty and responsibility of the UNHCR Supply
+Management function and the Warehouse Manager (regardless if they are
+UNHCR staff, Partners or commercial companies) to closely ensure adequate
+and safe storing conditions, efficient warehouse operations and complete and
+accurate recording of all inventory movements.
+Objective The objectives of warehouse and inventory management are to:
+ Ensure satisfactory receipt of goods;
+ Provide the ability to rapidly deliver goods requested;
+ Keep accurate account of the inventory movements and balance;
+ Maintain complete and accurate records of the inventory situation (physical,
+reserved, buffer, on hand, distribution, contingency, temporary and in transit
+inventories);
+ Maintain adequate storage conditions, to ensure that the inventory is in
+usable or serviceable condition when needed;
+ Implement appropriated measures to guarantee the safety and security of the
+goods.
+ Ensure the inventory is maintained according to the Layout & Storage plan;
+and items are conveniently staked.
+Key principles Effective warehouse and inventory management includes proper planning,
+recording, controlling and monitoring of the inventory. While the planning of
+transactions (objectives, needs, priorities, budget, procurement, etc.) is
+performed at the UNHCR operational level the execution involves the
+warehouse. Effective coordination and communication between the UNHCR
+offices and the warehouses are, therefore, essential.
+Ineffective inventory management could result inter alia in incorrect
+quantities released, incorrect data recorded, poor decisions, excessive
+inventory levels, inefficient use of funds, damage and losses.
+1 International Public Sector Accounting Standards (IPSAS) are a set of accounting standards issued by the IPSAS
+Board for use by public sector entities around the world in the preparation of financial statements
+SOP – Warehouse & Inventory Management in UNHCR
+Section 2: Definitions and Scope
+Version 1.0, last update: 18 Dec 2013 Page 5 of 38
+Section 2: Definitions and Scope
+UNHCR
+Inventory
+UNHCR inventories are all tangible items owned that are intended to be
+distributed to persons of concern. Inventories also include consumables,
+materials, and supplies consumed in the delivery of operations, when these
+items are of material value. Examples of inventory are tents, blankets and
+kitchen sets, etc.
+UNHCR
+Warehouse
+A UNHCR warehouse is defined as a planned space managed by either a
+Partner commercial entity or directly by UNHCR, where UNHCR owned
+inventories are stored and recorded.
+Scope of the
+SOP
+The scope of this SOP covers the responsibilities for the related processes at
+the UNHCR Offices holding inventories and at the level of the warehouse
+manager who might be UNHCR staff or staff of a Partner or a commercial
+entity.
+Any tangible or intangible items under the custody of Partners, defined as
+“Goods and Property” in the Project Partnership Agreement, are out of the
+scope of this SOP even if these items are used to implement UNHCR
+projects. Such Goods and Property include:
+ UNHCR Goods and Property, i.e. items provided in-kind by UNHCR to the
+Partner;
+ Project Goods and Property; i.e. items acquired by the Partner with UNHCR
+funds provided pursuant to the Partner Agreement.
+The management of these items will be covered by specific Guidelines to be
+developed based on this SOP
+This SOP covers the processes for warehouse and inventory management up
+to the point where UNHCR inventory items are released from the UNHCR
+warehouse for distribution. There might be further obligations requested by
+UNHCR (for example reporting requirements, as detailed in the Project
+Partnership Agreement) but these obligations are not a part of the scope of
+this SOP.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 3: Target Audience & Document References
+Version 1.0, last update: 18 Dec 2013 Page 6 of 38
+Section 3: Target Audience & Document
+References
+Target
+audience
+This SOP is addressed to:
+ Representatives;
+ UNHCR staff responsible for the supply function in field operations;
+ UNHCR staff who are custodians of inventory (Programme);
+ Warehouse managers and staff, regardless if warehouse is managed directly
+by UNHCR, by a Partner or a commercial company;
+ Staff in Supply Management and Logistics Service (SMLS).
+References This document is based on the rules and regulations in Chapter 8 and should
+be read in conjunction with the following documents:
+ AGREEMENT - Project Partnership (IOM/076-FOM/077/2013)
+ INSTRUCTIONS - Quarterly inventory reconciliation
+ INSTRUCTIONS - Yearly inventory physical verification
+(e.g. IOM/71/FOM/72/2013)
+ HANDLING GUIDE - Insurance coverage and claim
+ INVENTORY MANAGEMENT POLICY. (IOM/99FOM/100/2013)
+SOP – Warehouse & Inventory Management in UNHCR
+Section 4: Documents
+Version 1.0, last update: 18 Dec 2013 Page 7 of 38
+Section 4: Documents
+Waybill A Waybill (see Section 10) is used as the warehouse issuing document,
+certifying the transfer/release of goods. It is the base document for financial
+transactions, such as the payment of the supplier/forwarder and the recording
+of the accounting entries. It is the responsibility of the Warehouse Manager to
+ensure that the Waybill is properly filled in, signed and filed.
+The Waybill can be also referred to as the carrier document, listing the load,
+weight, size, final destination, etc. of the goods carried. As such, it is used as
+the delivery document to be presented to the receiving warehouse.
+Goods
+Receiving Note
+(GRN)
+The Goods Receiving Note (GRN) (see Section 10) is a standard UNHCR
+document to confirm receipt of goods. It is the base document for financial
+transactions, such as the payment of the supplier/forwarder and the recording
+of the accounting entries.
+Bin/Stack
+Card2
+Bin/Stack Cards (see Section 10) are standard UNHCR documents that are
+fitted to an item bin/stack in the warehouse. The card displays the beginning
+balance, movements in and out and the current balance of an item at any
+given time. One bin/stack should only contain one type of item from one
+unique Purchase Order (PO) number. The bin/stack cards facilitate picking
+and physical counts.
+The Bin/Stack Cards must be established or updated as a soon as an item is
+moved in or out for a specific bin/stack. The warehouse staff effecting the
+movement must note the approved Material Stock Request (MSR) number
+and sign after having updated the card.
+Stock Card The Stock Card (see Section 10) is a standard UNHCR document which
+consolidates the information of multiple bin/stack cards relating to the same
+item and PO in case it is stored in different bins/stacks of the warehouse. It
+should be continuously updated by the warehouse and maintained in the
+warehouse area.
+Stock Card vs.
+Bin/Stack Card
+In smaller warehouses, the Stock Cards provide the same information as the
+Bin/Stack Card. In larger warehouses the Stock Card information will
+consolidate the information of multiple Bin/Stack cards and show the total
+inventory holding of an item/PO which is stored in different bins/stacks.
+2 Warehouses equipped with professional inventory management system software (able to detail the location and
+quantity of each item & lot ID) can be exempted from maintaining bin cards.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 4: Documents
+Version 1.0, last update: 18 Dec 2013 Page 8 of 38
+Incoming
+Shipment
+Report
+The Incoming Shipment Report (see Section 10) is a standard UNHCR
+document summarising all (weekly) incoming shipments to a warehouse by
+item, Waybill/consignment and PO number.
+The report is used by the warehouse to control incoming inventory
+movements, and by the UNHCR office to verify that MSRP3 has been
+updated accordingly.
+Outgoing
+Shipment
+Report
+The Outgoing Shipment Report (see Section 10) is a standard UNHCR
+document summarising all (weekly) outgoing shipments from a warehouse by
+Waybill/consignment and PO number.
+The report is used by the warehouse to control outgoing inventory
+movements, and by the UNHCR office to verify that MSRP has been updated
+accordingly.
+Stock Report The Stock Report is a non-standard UNHCR document used to report the
+inventory position/holding for all inventory items by PO, at warehouse level.
+The reporting frequency will be determined based on the inventory turnover
+rate and/or the fluctuation in demand but is normally weekly. It is the
+responsibility of the local UNHCR office to define the format of the report,
+and the reporting frequency.
+The report is used by the warehouse and the UNHCR office to report the
+inventory holdings at warehouse and/or at country level to stock owners and
+other stakeholders. The reports provide timely information on inventory
+levels by warehouse and item which is important for operational, financial
+and procurement planning. It is also used as a back-up source of information
+in case of connectivity problems with MSRP.
+Layout &
+Storage Plan
+The Layout & Storage Plan is a non-standard UNHCR document showing by
+lot ID/PO where items are currently stored and where arriving items can be
+stored. Thus, it facilitates the picking process and warehouse management
+(e.g. physical verification, consolidation, warehouse space planning, etc.). It
+is the responsibility of the UNHCR Office to define the format to be used and
+to ensure proper implementation and updates.
+The plan should be regularly updated so that information on free space and
+storage locations of items is available.
+3 MSRP, Management System Renewal Project: UNHCR Enterprise Resource Planning system used for controlling
+a wider selection of functions within the organisation.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 5: Shared Obligations of the Warehouse and the UNHCR Office
+Version 1.0, last update: 18 Dec 2013 Page 9 of 38
+Section 5: Shared Responsibilities
+of the Warehouse and the UNHCR office
+5.1 Daily Tasks
+Exchange of
+Information
+It is the responsibility of the most Senior Officer Responsible for Supply in an
+operation and the Warehouse Manager to ensure an exchange of information
+according to the obligations detailed in this SOP.
+Inventory
+management &
+MSRP update
+It is the responsibility of the Warehouse Manager to ensure that the UNHCR
+office receives the information on the transactions effected for each day:
+copies of GRNs, Waybills, incoming and outgoing shipment reports and
+quality inspection reports.
+Based on the documentation received from the Warehouse it is the
+responsibility of the UNHCR Inventory Focal Point to update MSRP daily.
+The UNHCR Inventory Focal point and the Warehouse Manager must ensure
+an effective flow of information to enable monitoring and control of the
+activities planned. Both parties are responsible to ensure that inventory
+records are timely and accurately updated. Any issues noted should be
+communicated openly and immediately between the Warehouse Manager und
+the UNHCR Office or vice versa and jointly addressed.
+Note: For further information please see responsibilities of the inventory focal point
+detailed in Section 6.2 and responsibilities of the Warehouse Manager detailed in
+Section 7.2.
+5.2 Monthly Tasks
+Monthly
+inventory
+reconciliation
+The Warehouse Manager and the UNHCR office jointly need to perform the
+Monthly Inventory Reconciliation to ensure that Stock Cards and MSRP
+quantities match. Before this exercise it is very important to update the MSRP
+system with all inventory transactions completed.
+In case discrepancies are identified the cause must be determined and the
+records corrected, if necessary. This process may include ensuring that all
+transactions are logged in MSRP, auditing physical warehouse files against
+MSRP transactions and reports, recounts of bin/stacks etc.
+After the verification, a report must be sent to SMLS at Headquarters with
+full documentation and explanations of the discrepancies, if any.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 5: Shared Obligations of the Warehouse and the UNHCR Office
+Version 1.0, last update: 18 Dec 2013 Page 10 of 38
+Disposal of
+expired or
+damaged stock
+When an approved Disposal Request (GS45, UNHCR form) is received from
+the UNHCR office the expired or damaged inventory items can be disposed
+of environmentally friendly and in line with local regulations.
+The UNHCR office will adjust the inventory records in MSRP and the
+warehouse will adjust the quantities on the on the stock and stack/bin cards.
+The approved GS45 form needs to be printed and filed in the PO file.
+5.3 Quarterly Tasks
+Quarterly
+Inventory
+Verification
+The UNHCR officer in charge for inventories in coordination with the
+Warehouse Manager must conduct a full Physical Inventory Verification
+quarterly.
+Any discrepancy between the physical inventory as per count sheets and the
+MSRP stock records must be investigated and explained by the UNHCR
+office and the Warehouse Manager.
+The UNHCR office must send the full documentation of the stock count
+including the reconciliation reports with full explanation for all discrepancies
+to SMLS.
+If there is a high inventory turnover in the operation, the implementation of
+more frequent inventory verifications is recommended.
+5.4 Yearly Tasks
+Yearly
+Inventory
+Verifications
+The Yearly Physical Verification of Inventories is jointly performed by
+UNHCR staff (Supply and Programme) and the Warehouse Manager in
+accordance with instructions issued (usually IOM/FOM).
+As a part of this exercise, a full reconciliation between inventory quantities
+established by physical counts and MSRP records needs to be completed.
+Any discrepancy between the physical inventory as per count sheets and the
+MSRP stock records must be investigated and explained by the UNHCR
+office and the Warehouse Manager.
+The UNHCR office must send the full documentation of the stock count
+including the reconciliation reports with full explanation for all discrepancies
+to SMLS.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 5: Shared Obligations of the Warehouse and the UNHCR Office
+Version 1.0, last update: 18 Dec 2013 Page 11 of 38
+5.5 Handover of Responsibilities
+Inventory count
+before
+handover
+Any change of the Warehouse Manager and/or the UNHCR Officer
+responsible for inventory management requires that a complete physical
+inventory verification exercise is conducted.
+The responsible UNHCR Officer (outgoing/incoming) and the Warehouse
+Manager (outgoing/incoming) must conduct this as a joint exercise. In case an
+external warehouse manager is changing the Program Officer in charge
+should be involved as well. The new UNHCR Officer/Warehouse Manager in
+charge must sign the complete and updated inventory records for which they
+are taking over the responsibility.
+Copies of the hand-over documentation should be stored both in the
+warehouse verification files and with the Supply function in the UNHCR
+office.
+5.6 Warehouse – Main Information Sheet
+Warehouse
+information
+The Main Information Sheet of the warehouse should include details about
+the following:
+ Address of the warehouse, and its GPS coordinates;
+ General description of the area, access roads and the surface of roads and
+truck manoeuvring area outside the warehouse;
+ Description of the building(s), including the type, size and condition of the
+building(s), storage capacity size of the area designated for UNHCR
+inventory storage;
+ Insurance arrangements for the building(s);
+ In case of a rented warehouse, the details of the legal owner of the building,
+the notice period for cancellation of rent and the monthly rental fee;
+ Description of access control and security arrangements, system for control
+of key(s) and the location of spare keys;
+ If the warehouse operation is outsourced, the name of the IP/commercial
+company operator, including the contact detail of responsible person;
+ Contact details of Warehouse Manager, the UNHCR inventory focal point
+and the back-up persons (both for the Warehouse and the UNHCR Office).
+SOP – Warehouse & Inventory Management in UNHCR
+Section 6: Responsibilities of the UNHCR Office
+Version 1.0, last update: 18 Dec 2013 Page 12 of 38
+Section 6: Responsibilities of the UNHCR Office
+6.1 Key roles & Responsibilities
+Overall
+Responsibility &
+Staffing
+structure
+At UNHCR, the most senior officer responsible for supply in an operation is
+overall responsible for warehouse and inventory management. S/he must
+ensure that the function is properly implemented and adequately staffed and
+managed. This includes the daily update of MSRP with all inventory
+movements and providing timely reports to stakeholders.
+Each operation holding inventory must have the following MSRP roles
+assigned to adequately trained staff:
+ Inventory Focal Point / (Supply function);
+ PO/inter-unit Material Stock Request (MSR) receiver / (Supply function);
+ Material Stock Request (MSR) preparer / (Supply function);
+ MSR approver / (Program function);
+ MSR Pick & Ship function / (Supply function);
+ Back-up for each function mentioned above.
+A file detailing the persons assigned to each function must be maintained and
+included in the office’s Delegation of Authority Plan (DOAP). The officer
+responsible for the Supply function shall ensure that only competent staff is
+assigned to perform these tasks (e.g. provided training/support/oversight).
+It is the responsibility of the Supply function, in cooperation with
+Programme, to ensure that each warehouse (regardless if managed by
+UNHCR or external staff) has one designated Warehouse Manager with the
+overall responsibility for managing the warehouse and its operations.
+6.2 Responsibilities of the Inventory Focal Point
+Information to
+be provided to
+the Warehouse
+To enable the warehouse to operate effectively and efficiently, the UNHCR
+office as a minimum needs to inform the warehouse of:
+ Sourcing plan: Will assist the Warehouse Manager in calculating the storage
+space needs for future periods.
+ Incoming shipments: Pipeline information providing item specifications,
+quantities and PO/MSR numbers. It allows the Warehouse Manager to
+verify the documentation/specifications of the items prior to arrival and to
+arrange for proper receipt/inspection and storage space.
+ Distribution plans: Informed by sourcing plans and incoming pipeline
+information. It allows the Warehouse Manager to establish an estimated
+schedule for inventory movements, enabling work force and space planning.
+ Approved MSRs: Are the only valid documents authorising the Warehouse
+Manager to release inventory to a named organisation/entity or their
+representative (i.e. truck driver showing appropriate documentation).
+SOP – Warehouse & Inventory Management in UNHCR
+Section 6: Responsibilities of the UNHCR Office
+Version 1.0, last update: 18 Dec 2013 Page 13 of 38
+Daily tasks  Update, based on documentation received from the warehouse, MSRP with
+PO/inter-unit MSR receipts (Waybills and Goods Receiving Notes/GRNs),
+and the Pick & Ship details on outgoing MSRs. MSRP should only be
+updated upon receipt of the above mentioned documentation.
+ Initiate, based on information received from Programme or the warehouse,
+relevant actions related to:
+- Release Request (MSR) review;
+- MSR modifications;
+- Inventory adjustment preparation, in case of returned inventory.
+ Prepare MSRs for release of inventory from the warehouse.
+ Run MSRP reports, with a copy to the warehouse, to verify if the activities
+executed the previous day were as planned:
+1. HIN_USRQRY_STOCK report (stock report);
+2. HIN_USRQRY_SUMM OF ISSUE (releases the previous day);
+3. HIN_USRQRY_SUMM OF RECEIPTS (receipts the previous day).
+ Plan warehouse incoming and outgoing flows, and run MSRP reports, with
+a copy to the warehouse:
+4. HIN_USRQRY_PENDING PIPELINE (Receiving Pipeline);
+5. HIN_USRQRY_PENDING IU PIPELINE (Pending InterUnit
+Receipt).
+ Review the current inventory level against planned releases and flag the
+need for replenishment to the Supply Unit if the inventory levels are not
+adequate to meet known future demand.
+ Reconcile the five MSRP reports listed above with the information and
+documentation received from the warehouse. Flag any outstanding (nonreceived)
+shipments, investigate the causes and clear them.
+ Update the MSR file.
+Weekly &
+Monthly tasks
+ Share the (weekly) Stock Reports with relevant stakeholders in the office as
+per the office instructions/procedures.
+ Ensure that issues identified in the Exception reports sent by SMLS are
+timely addressed, rectified and reported back to SMLS. Exception reports
+include:
+- MSR Processed Not Approved;
+- MSR Picked Not Shipped;
+- MSR Not Picked and Shipped;
+- Receiving Pipeline;
+- Pending Inter-Unit Receipt;
+- Obsolescence Report.
+ Perform at least monthly inspection visits to the warehouse and more
+frequently in operations with high inventory turnover.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 6: Responsibilities of the UNHCR Office
+Version 1.0, last update: 18 Dec 2013 Page 14 of 38
+6.3 Processes for Receiving and Releasing Inventory
+Initiating
+processes
+The UNHCR office shall initiate and approve the receiving of consignments
+at or releasing of inventory from a warehouse.
+ Receipt of inventory at a UNHCR warehouse requires valid shipping
+documents verifying the following consignment details:
+- UNHCR Warehouses can only receive inventories that are procured
+for and owned by UNHCR and any consignment delivered should
+have a UNHCR PO number reference (this is also applicable for
+donations (DONIK4 POs).
+- In order to properly receive the items in the warehouse the responsible
+officer in the UNHCR office must ensure that all relevant information
+is provided to the warehouse, preferably well in advance of the
+delivery.
+ The warehouse is not allowed to dispatch any inventory without receiving a
+completed and approved MSR from the UNHCR office. For external MSRs,
+a valid Chart Field combination must be entered before it can be approved.
+Note: For further information please see UNHCR’s Supply Manual, Chapter 8, Part
+4: Warehouse Management; Section 4: Releasing and Returning stock
+6.4 Rectifying Errors
+Reviewing of
+MSRs
+Supply staff has to review the Release Request and if inconsistencies are
+noted the following applies.
+If… Then…
+The quantity asked for in the
+Release Request is greater than
+the available quantity.
+Resolve with the UNHCR office and amend
+the Release Request. Prepare the MSR
+according to the revised details.
+The customer has requested
+goods which are currently not in
+the pipeline or the warehouse.
+Check with Sourcing staff. Discuss with the
+customer (prior to creating the MSR) and
+issue a modified MSR or cancel the Release
+Request.
+Additional items are expected to
+arrive later than the MSR
+distribution dates.
+Consult with the customer and agree a
+revised distribution schedule. Create MSR
+with modified schedule.
+4 DONIK = donations in kind
+SOP – Warehouse & Inventory Management in UNHCR
+Section 6: Responsibilities of the UNHCR Office
+Version 1.0, last update: 18 Dec 2013 Page 15 of 38
+Modification of
+MSRs
+Supply staff may need to modify or cancel the MSR, if it has not been
+shipped and/or if it was changed, as follows.
+If… Then...
+A customer sends a modification
+to a Release Request for which a
+MSR has already been created.
+The MSR should be modified as per the
+updated Release Request. Inform the
+warehouse accordingly.
+Additional goods are needed. Change the MSR to reflect the increased
+quantity. Inform the warehouse to reserve.
+If the quantities of goods is
+reduced.
+Change the MSR to reflect the reduced
+quantity. Inform the warehouse to ‘unreserve’.
+MSR is no longer needed due to
+a modification or a change to the
+Release Request.
+Cancel the MSR and ‘un-reserve’ the surplus.
+Inform the warehouse accordingly.
+6.5 Return of Goods
+Introduction Items ordered and delivered might have to be returned to the vendor or the
+dispatching warehouse due to:
+ Defect or damages;
+ Duplicate orders or overdeliveries;
+ Delayed delivery (in case items are no longer required).
+Note: For further information please see UNHCR’s Supply Manual, Chapter 8, Part
+4: Warehouse Management; Section 4: Releasing and Returning stock.
+Process for
+returning to
+vendor
+If goods are returned or rejected for quality reasons the vendor has to replace
+them or issue a credit note.
+Note: For further information please see UNHCR’s Supply Manual, Chapter 8, Part
+4: Warehouse Management; Section 4: Releasing and Returning stock.
+Returning
+dispatched
+inventory
+Return of inventory items dispatched from a warehouse should be an
+exception and avoided by carefully planning the distribution quantities.
+If a dispatch, or part of it, is nevertheless returned to the issuing warehouse,
+the items are to be recorded back to MSRP. This cannot be done at the
+country level, therefore, the UNHCR office needs to inform SMLS at
+Headquarters about the details of the adjustment required.
+Note: For further information please see UNHCR’s Supply Manual, Chapter 8, Part
+4: Warehouse Management; Section 4: Releasing and Returning stock.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 6: Responsibilities of the UNHCR Office
+Version 1.0, last update: 18 Dec 2013 Page 16 of 38
+6.6 Recording of Transactions in MSRP
+Recording of
+transactions
+The UNHCR office must ensure that the MSRP Inventory module is updated
+daily with all inventory transactions, i.e. PO/inter-unit MSR receipts and
+MSR Pick & Ship (dispatch).
+Inventory transaction may only be recorded in MSRP upon receipt of
+documentation from the warehouse providing proof of the physical
+movement, such as Waybills and GRNs.
+6.7 Document Management
+Document
+management
+The UNHCR office shall establish a filing system for hardcopy documents
+related to warehouse transactions and inventory holdings, and retain them for
+five years. The following documents need to be filed:
+ Contracts/POs;
+ Goods Receiving Notes (GRNs);
+ Waybills and Delivery Notes;
+ Inspection & Weekly reports;
+ Bin/Stack Cards & Stock Cards;
+ Inventory counting sheets;
+ Loss/Damage forms;
+ Import/export documents.
+6.8 Insurance
+Obligation &
+references
+The UNHCR staff responsible for the warehouse management must arrange
+adequate insurance for inventories stored, preferably through the global
+insurance policy offered by SMLS, or, if this is not feasible, through a local
+insurance company. Regarding further details on the global insurance policy
+managed by SMLS please refer to the Insurance Coverage and Claim
+Handling Guide.
+Note: For further information please see UNHCR’s Supply Manual, Chapter 8, Part
+Warehouse Management; Section 4-2-8
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 17 of 38
+Section 7: Responsibilities of the Warehouse
+7.1 Key Roles & Responsibilities
+Responsibilities
+& Staffing
+structure
+All UNHCR warehouses5 need to have competent personnel and adequate
+equipment and material to manage and control the warehouse and the
+inventories. In addition, the organisational structure needs to be defined
+detailing the authority, responsibility and accountability of each role in the
+warehouse.
+It is the responsibility of the Warehouse Manager to ensure that the following
+key roles and responsibilities are assigned6:
+Roles Responsibilities
+Warehouse Manager /
+Supervisor / Storekeeper
+Oversee the warehouse operations. Control storage,
+movement and receipt/issue of inventory.
+Controller / Tally clerk(s)
+Match physical quantities against receipt/release
+documents and ensure that inventory records
+(Bin/Stack & Stock Cards) match physical inventory.
+Record-keepers Update and track inventory files and shipping
+documents, ensure proper filing routines.
+Security Ensure 24 hour protection of warehouse premises and
+items stored.
+All warehouse staff should recognise their responsibility for the caretaking of
+the inventories during receipt, storage and dispatch, including the handling
+and filing of documents. It is equally important that all warehouse functions
+including load masters, loaders, tally clerks, cleaners, casual workers, etc.
+have clear job descriptions detailing the procedures to be followed. Their job
+descriptions should include:
+ Clearly defined responsibilities;
+ Defined tasks to be performed ;
+ Planned working hours and shifts;
+ Defined standards for good job performance;
+ Documents to be used and document flows;
+ Usage of tools and equipment.
+All staff should be trained to perform their functions, and regular staff
+meetings be held, specifically on safety and quality assurance matters.
+5 A UNHCR warehouse is defined as a planned space managed by either a Partner, commercial entity or directly by
+UNHCR, where UNHCR owned goods are stored, and recognized in the UNHCR financial statement (as defined in
+Section 1 of present SOP).
+6 In larger warehouses it is recommended to separate the roles while in smaller warehouses one person might have to
+assume multiple roles.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 18 of 38
+7.2 Responsibilities of the Warehouse Manager
+Information to
+be provided to
+the UNHCR
+office
+The Warehouse Manager must ensure that the UNHCR office receives the
+following information in timely manner:
+ Daily: Incoming/Outgoing Shipment reports; Copies of GRNs, Waybills &
+Quality Inspection reports;
+ Weekly (or as otherwise instructed): Stock reports (detailing in/out
+movements and balances);
+ Monthly: Copies of Stock Cards (also those where the quantity has reached
+zero during the reporting period);
+ Quarterly: Physical Inventory Verification reports.
+Daily tasks It is the responsibility of the Warehouse Manager to plan and implement the
+daily activities based on information of in/out movements, control activities,
+etc. received from the UNHCR office.
+ Verify all inventories and check if they are owned by UNHCR. In case of
+non-UNHCR inventory discovered notify the UNHCR office immediately;
+ Control the storage conditions (general condition and cleanness, etc.);
+ Control that the stacking of items is appropriate and safe;
+ Check the quality of the inventory, if the bottom layer is elevated from the
+floor and if items are damaged;
+ Verify that all bins/stacks have Bin/Stack Cards;
+ Verify that Bin/Stack Cards & Stock Cards are timely updated;
+ Check that the Layout & Storage plan is updated and matching the physical
+placement of inventory in the storage area;
+ Check the completeness of documents, handling and filing routines, in the
+storage area and in the warehouse office (receipt, signatures, updating, etc.);
+ Ensure the correctness of documents, such as Incoming/Outgoing Shipment
+reports, Waybills, GRNs, Inspection reports, etc. and ensure they are
+finalised and delivered to the UNHCR office as instructed;
+ In case of inventory discrepancies investigate and notify the UNHCR office
+as soon as possible (this includes discrepancies between warehouse records
+and the reports from the UNHCR office);
+ Verify that personnel report at the start of their shift, verify absences, train
+newly recruited personnel in their tasks, plan for and task personnel for the
+activities to take place;
+ Inspect the general condition of the warehouse premises;
+ Ensure cleanliness of the building and premises, and ensure that waste
+disposal routines are environmental friendly.
+ Security and safety checks
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 19 of 38
+7.3 Layout & Storage Plan
+Objectives &
+References
+One of the main objectives of warehouse management is to ensure that
+inventories stored for a shorter or longer periods of time are in the best
+possible condition when dispatched for use by the beneficiaries. The Layout
+& Storage plan is a tool to manage space utilisation in the warehouse.
+A clear segregation between inventory items owned by UNHCR and other
+goods must be maintained in case the warehouse is shared with other
+organizations, or when the warehouse operator stores goods for other clients
+in the same locality.
+Layout &
+Storage plan
+All warehouses should maintain a Layout and Storage Plan based on a grid
+layout, showing where the different items are stored, and update it regularly.
+The storage areas should be marked by chalk/paint on the floor and include
+area, row and aisle identification codes (e.g.: grid Area 2/Row A/Aisle 1).
+As a minimum of five areas should be designated:
+1. Office area;
+2. Goods receiving area;
+3. Goods storage area(s) (can include outdoor space);
+4. Damaged/expired goods area;
+5. Staging/loading area for items picked and ready for release.
+Further areas can be required for larger warehouses such as:
+ Sealed/locked area, for attractive and/or high value items;
+ Spare parts storage area;
+ Temperature controlled/cold chain storage area;
+ Dangerous goods area (pesticides, fuel, etc.).
+When developing the Layout & Storage plan, the following must be ensured:
+ Separate food and non-food item storage areas;
+ Store items on pallets (food always, Core Relief Items (CRI’s) preferably);
+ Allow at least one meter space around stacks and between stacks, walls,
+pillars, beams or other obstructions, for ventilation and manoeuvring;
+ Store different consignments (lot IDs/PO numbers) of the same item in
+separate stacks;
+ Use the FIFO7 (first in, first out) principle, unless special circumstances
+such as emergencies require to deviate;
+ Record the location of stock in the Layout & Storage plan, and the Stock
+Card, and include the following details:
+- Storage area code (e.g.: grid: Area 1/Row A/Aisle 2);
+- Commodity code or description of the item;
+- Lot ID/PO number of the item.
+7 First in, first out. Turnover of stock procedure requiring first receipts to be issued/used first (not applied as
+evaluation method)
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 20 of 38
+7.4 Safety and Security of Stock
+Safety and
+Security of
+Stock
+Goods should be protected from the risks of fire, loss, breakage, damage and
+theft. A security risk assessment and facilities assessment should be
+undertaken. The warehouse shall prepare an infrastructure plan covering:
+ Security lighting, evacuation plan (escape exits) and assembly points
+clearly identified and marked;
+ Appropriated fencing and other security measures as alarms; perimeter
+walls/fences towards adjoining buildings/areas. This may include security
+guards/ response plan / support from Host Government Security Forces;
+ No smoking policy;
+ Firefighting equipment and fire safety plan;
+ Limited and controlled entry/exit to the warehouse/storage area;
+ Storage requirements for hazardous goods (especially fuel);
+ Special storage and security conditions for high value items:
+ Incident response plan.
+Hazardous
+Goods
+Hazardous, flammable or explosive materials need to be stored away from
+inhabited areas and surrounded by metal or masonry barriers. In addition, the
+following applies:
+ Keep hazardous goods away from other products, especially foodstuffs;
+ Be aware of the different hazard classes and which hazardous/dangerous
+goods that cannot be stored together;
+ All hazardous/dangerous goods must be appropriately marked with
+markings/stickers on the goods/packing;
+ All staff must be informed about handling, preventive and mitigating
+actions, place accident cards on the stack and in the warehouse office;
+ Provide protective clothing such as goggles and gloves when necessary:
+ Proximity to hazardous substance manufacturers should be avoided.
+Note: Paint, fertilisers, pesticides, disinfectants and water treatment
+chemicals are examples of materials which are potentially hazardous.
+Fire Fire is a major safety and security hazard in a warehouse. Some items (e.g.
+petrol) may catch fire spontaneously as a result of natural heating.
+ Take special precautions with hazardous, inflammable or explosive materials;
+ Ensure regular inspection by firefighting authorities;
+ Provide fire extinguishers, regularly maintained (available and tested);
+ Post and circulate fire prevention and extinction instructions;
+ Organise regular fire drills;
+ Place sand buckets and shovels near main exits;
+ Prohibit smoking in the warehouse area;
+ Nominate and train fire wardens;
+ Regularly control the status of the electrical systems;
+ Maintain list of relevant emergency contact numbers.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 21 of 38
+Flood and
+water damage
+Take precautions to prevent water damage, e.g. by elevating the bottom layer
+of stacks from the floor. Repair and replace roofs during the dry season.
+Access control  Restrict access to the storage area to authorised personnel only.
+ Arrange for security services and establish inspection routines.
+ Establish strict controls of access to keys.
+ Establish vehicle and personnel checking and control routines at gates.
+Pest control Insects and rodents attack foodstuffs and paper products, as well as textiles. It
+is estimated that insects and rodents damage as much as 10% of stored cereals
+on average worldwide, with as much as 30% damaged in subtropical regions,
+especially when foodstuffs are stored over long periods.
+To reduce potential losses, follow the below guidelines:
+Topic Guidelines
+Storage
+period
+Never store susceptible foodstuffs for longer than four
+months.
+Infestation  Separate and treat infected goods when detected.
+ Inspect all potentially affected stocks every two weeks,
+and take immediate remedial action (as spraying, dusting
+or fumigating with pesticides). If part of a consignment
+needs to be fumigated, the entire warehouse must be
+fumigated.
+Note: Seek expert advice on chemicals to use and dangers
+related to humans.
+Disease  Control regularly for rats, mice, cockroaches and birds
+(they carry parasites that can spread diseases).
+Pest control  Use preventative and curative methods to kill insects at
+all stages of their development.
+ Take care not to damage commodities, nor endanger
+humans working with or consuming the goods.
+Fumigation
+(prevention)
+ Spray during bagging or when loading goods.
+ Mark consignment with: date of fumigation, chemicals
+used and expected duration of the protection.
+Fumigation
+(treatment)
+ Fumigate in a closed, preferably airtight space.
+ Fumigate when the insects are most active, usually just
+before nightfall, close warehouse for at least 24 hours
+afterwards.
+Note: Seek expert advice on chemicals to use, usage/
+handling, quarantine periods before consumption/use and
+dangers related to humans.
+Chemicals Keep all pest control chemicals in a separate locked store.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 22 of 38
+Perishable
+goods control
+Special attention should be paid to perishable goods, and appropriate systems
+and monitoring routines should be in place to manage perishable
+consumables.
+The warehouse management should develop a system notifying about expiry
+dates, and inform UNHCR well in advance (at least 60 days prior to expiry).
+7.5 Stacking
+Introduction Appropriate and careful stacking is essential to ensure the stability of stacks,
+maximise the use of space, facilitate stocktaking and prevent damage or loss
+to goods being stored.
+Stacking
+principles
+Follow the below general stacking principles and guidelines:
+Topic Guidelines
+Stability  Never store goods directly on the warehouse floor,
+elevate to avoid moisture.
+ Never store goods directly against walls, pipes, or
+supports as stacks place stress on the structures, will
+hamper access and could expose goods to moisture.
+ ‘Bond’ stacks of rectangular bags or boxes by orienting
+every other layer in different directions, to prevent the
+stack from falling over.
+Stacking
+order
+ Keep different items, packages and consignments in
+different stacks.
+ Ensure that perishable goods can be rotated, if necessary.
+ Ensure that all stacks, including older stacks placed in the
+rear areas, are accessible so that the FIFO principle can
+be applied.
+Light and
+ventilation
+ Limit stack sizes to a maximum of 6 by 6 meters to
+prevent excessive floor load and pressure damage to
+packaging or contents inside the stack.
+ The maximum height of stacks depends on the type of
+goods and their packing, ensure safe storage and handling
+for warehouse workers.
+Damaged
+goods
+ Stack damaged goods separately, repair or repack (if
+possible) and issue first if they are usable.
+ Do not mix different types of damaged goods together.
+Open areas  Separate foodstuffs from other supplies to avoid
+contamination.
+ Store fuels, lubricants and other hazardous substances in
+a separate building or a protected area.
+Rotation  Rotate or turn goods over periodically.
+Bottles
+& Cans
+ Stack packages containing cans or bottles upright.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 23 of 38
+Stacking
+different units
+As a general principle, issue goods in their smallest possible units, to simplify
+later distribution.
+Repackaging: If goods are issued in a form different from their distributing
+needs, or different customers need different packaging unit sizes, some
+repackaging may be required.
+Follow the below guidelines stacking different packaging units and goods:
+Items Guidelines
+Bags
+&
+Tents
+ Make sure the floor is levelled and strong.
+ Use dunnage (such as pallets, wooden planks, etc.) to elevate
+the bottom layer of bags from the floor, to for allow air
+circulation and prevention against moisture.
+ Check the stability of the stack while stacking, and in particular
+when reaching a height of five layers.
+ Ensure that the lower layer packs can sustain the weight.
+ Plan aisle space (1 metre) between stacks, and between the
+stacks and the walls.
+ Use either ‘criss-cross’ stacking (orienting every other layer of
+bags in different directions) or the block method (bags oriented
+both length-wise and width-wise in one layer, and a reversed
+pattern in the next layer).
+ Do not exceed the maximum safety height of 6 metres when
+stacking bags.
+Elevation of
+bottom layer
+Dunnage or pallets should always be used to elevate the bottom layer of
+goods from the floor and to allow for air circulation. Pallets should be clean,
+level and free of projecting nails or splinters. Swipe and clean the floor prior
+to placing the dunnage/pallet, as spilled grains would for example be
+attractive for rodents and insects.
+If wooden pallets are not available Supply staff can arrange with suppliers to
+deliver goods palletised, to arrange for pallets from a logistics service
+provider or to use loose planks, thick woven mats or plastic sheeting.
+7.6 Warehouse Supplies & Equipment
+Supplies &
+Forms
+Ensure that the following forms are always available in sufficient quantities:
+ Stock Cards;
+ Bin Cards;
+ Numbered Waybills (D015);
+ Numbered Goods Receiving Notes (GRNs);
+ Forms, ledgers and other stationary.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 24 of 38
+Basic
+warehouse
+equipment
+For the warehouse to function properly, the following basic equipment must
+be made available:
+ First aid kits (and medical plan) in case a person is injured;
+ Telephone or radio communications link;
+ Internet/fax connection (if possible, internet connection should be arranged
+to facilitate exchange of information with the UNHCR office);
+ Computer & multifunction printer (copier, printers, scanner, fax);
+ Tools for opening cases, such as hammers, crowbars, steel cutters etc.;
+ Spare sacks, needles, twine and small containers or cartons to repack
+supplies when packaging has been damaged;
+ Scales for weighing commodities, suitable size sieves, and two wheeled
+hand and/or jack trolleys for moving goods;
+ Brooms, dust pans, brushes and rubbish bins;
+ First aid kit, flashlights, fire extinguishers and other firefighting equipment,
+both inside and outside the storage building;
+ Power cables or extension leads and compressed air unions;
+ Provision of stand-by generators if the electric supply is not stable.
+Specialised
+equipment
+The potential need for power generators, forklifts and conveyors to handle
+large quantities of supplies or heavy items should be determined with the help
+of expert advice.
+7.7 Receiving Consignments
+Important
+remark
+UNHCR Warehouses should only store inventories owned by UNHCR, and
+all consignments should have an UNHCR PO number reference (this is also
+applicable for donations (DONIK POs)). UNHCR should be clearly stated as
+the consignee on the Waybill (Bill of Lading, Air Waybill, Delivery Note
+from manufacturer, CMR8 etc.) or other official cargo documents.
+The responsible officer in the UNHCR office must ensure that all relevant
+delivery information is provided to the warehouse well before the actual
+delivery (as detailed in Section 5 of this SOP).
+Objectives The Warehouse Manager is responsible for the physical receipt of goods,
+confirming that the quantity and quality of the goods received is according to
+the specifications. In addition, s/he needs to verify if the shipping documents
+received are in order and inform the UNHCR office after completion of
+receipt. An effective receiving process ensures that goods are properly
+inspected and received, stacked away and stored, that inventory records are
+timely updated and the required documentation sent to the UNHCR office for
+update of MSRP.
+8 CMR, Convention of Contract for the International Carriage of Goods by Road
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 25 of 38
+Within the goods receiving area
+First visual
+inspection &
+checking of
+shipping
+documents
+Firstly, execute a visual inspection of the truck(s). Check if the goods are
+visibly in accordance with the shipping documents (waybills, container seal
+number, container number, date recorded, etc.).
+Inspect the goods for obvious visible damages or loss (e.g. bad quality canvas
+on the truck, holes in the container, destroyed outer packing, etc.).
+Offloading &
+inspecting for
+damage or loss
+Goods should be carefully offloaded and handled to minimize damage
+following these general handling guidelines, if possible:
+ Avoid outside offloading during rain;
+ Use forklifts for large or heavy items;
+ Use trolleys for lighter ones;
+ Do not drag, drop or throw items.
+Follow the below steps when receiving/inspecting the consignment:
+Step Action
+1 If there is visible damage or non-conformity with shipping
+documents, immediately take photos using a digital camera or a
+mobile phone, inform the responsible UNHCR officer, stop
+offloading and reject the consignment. Visible damage or nonconformity
+can include:
+ Water stains on packing;
+ Crushed boxes;
+ Date of expiry passed on packaging labels;
+ Goods are obviously not what was indicated on the shipping
+document;
+ Lacking PO number and/or goods not marked for UNHCR.
+2 If there is any doubt unpack goods samples for further inspection.
+3 If there is no obvious visible damage remove packaging and spot
+check some items in the presence of the carrier to ensure that the
+goods conform to specifications.
+Performing simple quality control tests (in particular for locally
+procured items). Weight scale and measuring meter must as a
+minimum be available in the warehouse (weight is often used as an
+inspection parameter for sealed boxes).
+4 If goods are damaged, short-landed or not of the expected quality
+note the details on shipping document and fill in the Loss/Damage
+form (with photos if possible). Inform and send the documents to
+the UNHCR office on the same day.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 26 of 38
+Confirming
+receipt
+Confirmation of receipt is a necessary step to verify that the supplier of the
+goods and transport service supplier have fulfilled their obligations and is the
+basis to release the payment to the supplier(s).
+In the warehouse, a GRN should be issued as the proof of delivery for the
+particular shipment/consignment (Note: one GRN per truck). Obtain the
+signature of the transporter on the Waybill and the GRN and date all
+documents.
+In the event of lost or damaged goods follow the instructions provided by the
+UNHCR office. The warehouse has to confirm the receipt and a prepare a
+Loss/Damage form in order for the UNHCR office to initiate necessary
+complaint actions (Protest Letter and Claim Initiation) against the supplier
+and/or transporter.
+Assigning goods to a storage location (‘put away’)
+Store the goods Once the warehouse manager has accepted all or parts of a consignment, store
+the goods as follows:
+If the consignment is
+for…
+Then…
+An existing PO
+ Store the goods in the same place as the previous
+shipment.
+ Update the Bin/Stack and Stock Cards.
+ File the shipping documents and the GRN in the
+existing PO file.
+A new PO
+ Store the goods in an appropriate location,
+according to the Layout & Storage plan. Update
+the plan. Note: Only one item from one PO per
+bin/stack.
+ Create Bin/Stack and Stock Cards. Ensure that the
+card is physically attached to the bin/stack.
+ Create a new PO file and file the shipping
+documents and the GRN in it.
+Updating Stock records
+Updating
+inventory
+records
+At the end of each working day, the Warehouse Manager needs to ensure that:
+ The GRNs, Bin/Stack and Stock Cards, PO files and the Layout & Storage
+plan have been properly updated;
+ The Incoming/Outgoing Shipment report is updated;
+ Necessary documents (GRNs, Shipping documents, etc.) are collected and
+sent to the UNHCR office.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 27 of 38
+7.8 Return of Goods
+Returning
+items/inventory
+Items that have been inspected may need to be returned either to the vendor or
+the dispatching warehouse because they were discovered to be:
+ Defective or damaged;
+ Duplicate or shipped in excess of PO quantity;
+ The wrong items;
+ Not delivered on time and no longer required.
+Rules for
+return to
+vendor
+The process of returning goods to the vendor shall be managed by the
+responsible officer in the UNHCR office providing clear instructions to the
+Warehouse Manager.
+Returning
+dispatched
+inventory
+Return of dispatched inventory from an UNHCR controlled warehouse should
+be an exception. If a dispatch, or part of it, is nevertheless returned to the
+issuing warehouse the warehouse should immediately contact the UNHCR
+office to receive instructions on how to handle the returns in different
+situations, for example:
+If… Then…
+The same goods can or will be
+re-dispatched to the same
+location.
+ Keep them overnight on the truck (if it
+can be secured).
+ Do not adjust documentation.
+The goods are to be dispatched
+to a different location.
+Adjust the appropriate documents in the
+warehouse.
+After dispatch, some or all the
+goods in a shipment are
+returned to a warehouse and
+added to existing stock.
+ Use a GRN, to register the shipment as
+an “incoming” shipment under the same
+PO that it was shipped out with.
+ Note why the goods were returned on
+the Waybill.
+Goods returned are in ‘good
+order’.
+Return to their original storage location
+in the warehouse.
+Goods are damaged. Place them in the damaged goods section
+of the warehouse and take action to repair
+or dispose of them.
+When receiving the approval from the UNHCR office, the regular processes
+for receiving consignments (including the first visual inspection, the
+offloading & inspecting for damage or loss, etc.) must be followed.
+These goods must be clearly marked and stored separately as the returned
+goods cannot be dispatched again before the inventory adjustment process has
+been confirmed by the UNHCR office.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 28 of 38
+7.9 Release of Goods
+Important
+remark
+It is not allowed to issue inventory from an UNHCR warehouse managed by a
+Partner without a duly approved Material Stock Request (MSR9) sent from
+the UNHCR office to the warehouse.
+In order to execute the release the UNHCR officer in charge of inventory
+must ensure that all relevant information and documentation is received by
+the warehouse in due time before the physical release (as detailed in Section 5
+of this SOP).
+Objectives for
+releasing goods
+Goods are approved/authorized for release from the warehouse for the
+following purposes:
+ Distribution externally to UNHCR (External release);
+ Transfer to another UNHCR warehouse (InterUnit transfer);
+ Internal UNHCR consumption (Internal issue);
+ Disposal following the appropriate authorization (a process completely
+managed and controlled by the UNHCR office).
+Following the release of inventory, the warehouse inventory records and
+stock as well as stack/bin cards must be updated in a timely manner, all
+relevant information/ documentation must be filed and documents need to be
+sent to the UNHCR office for update of MSRP.
+Reserving stock When receiving an approved MSR from the UNHCR office the Warehouse
+Manager should ‘reserve’ the inventory as specified in the MSR (PO
+number(s) of items to be picked are stated in the MSR) to ensure that it will
+not be accidently released with another MSR.
+Picking stock The warehouse staffs needs to ‘pick’ the goods from the storage area based on
+the MSR, and place them in the assigned staging area.
+For larger shipments, the warehouse needs to prepare a loading plan and
+schedule, taking into account the physical limitations of the warehouse and
+the warehouse area, number of loading gates, country limitations on weight
+and volume of trucks, etc.
+As soon as the goods are moved from the storage area to the staging area, the
+Bin/Stack and Stock Cards must be updated.
+9 The UNHCR ERP system created MSR shall be used whenever possible but if a field location is not connected, the
+D017 form is to be used and the ERP system Inventory Module updated as soon as possible by the UNHCR office.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 29 of 38
+Staging area Goods picked must be properly stacked in the staging area, ensuring a clear
+separation between the different MSRs.
+Items requiring packing must be packed and a packing list needs to be
+prepared.
+Ensure that all relevant MSR information is displayed on each stack in the
+staging area to avoid possible mistakes during the loading process.
+Prepare
+Waybills
+For any issue of inventory from a UNHCR warehouse a Waybill must be
+issued, countersigned by the receiver upon delivery of the goods and the
+original signed Waybill must be returned to the warehouse.
+Inspecting
+outgoing
+shipment
+It is highly recommended that the controller/tally clerks or security guards
+count during loading to ensure that the vehicle is loaded as planned and in
+accordance with the Waybill.
+Direct release If goods are taken directly from the UNHCR warehouse by the consignee s/he
+or her/his representative must sign the Waybill when taking over the custody
+of the goods. The Waybill will act as proof of delivery.
+The responsibility of UNHCR Supply function and the warehouse ends when
+the Waybill is duly signed by the consignee and the original returned to the
+warehouse.
+Updating stock
+records
+At the end of each working day, the Warehouse Manager needs to ensure that:
+ Waybills, PO files, Bin/Stack and Stock Cards and the Layout & Storage
+plan have been properly updated;
+ The Incoming/Outgoing Shipment Report is completed for the movements
+of the day.
+7.10 Document Management & Filing
+Document
+management
+It is the responsibility of the Warehouse Manager to establish an internal
+system ensuring that relevant documents are properly issued, filled in and
+filed.
+The two main documents providing proof of transactions based on which
+payments are released and MSRP records are updated are the GRN and the
+Waybill.
+SOP – Warehouse & Inventory Management in UNHCR
+Section 7: Responsibilities of the Warehouse
+Version 1.0, last update: 18 Dec 2013 Page 30 of 38
+Document
+management
+Continued
+It is recommended that the warehouse maintains two different files, both of
+which must be retained for five years:
+1. The PO file containing all related transaction documents such as:
+- GRNs;
+- All shipping documents received with the consignment(s) (e.g.
+Delivery Notes, Waybills, Packaging lists, Customs document);
+- Inspection documents prepared by the warehouse, such as Receipt
+report, Quality Inspection report, copy of Inventory Verification
+report in case of discrepancies, etc.;
+- Stock and Bin/Stack Cards;
+- Approved MSRs and issuing Waybills;
+- Lost/Damage forms, if any.
+2. The Inventory Verification files containing all documents related to
+physical verifications, including Monthly Reconciliations and
+quarterly/annual Physical Stock Counts.
+7.11 Maintaining the Premises
+Maintaining &
+cleaning
+To maintain the premises, a cleaning and garbage disposal plan needs to be
+developed for the warehouse.
+The plan should include the tasks, and timing of those, for the warehouse staff
+and cleaning personnel. Further, the plan needs to detail how waste is to be
+handled, and the dedicated areas for the different types of waste or surplus
+packing material.
+The plan needs to ensure:
+ Daily: That dirt, rubbish and smaller quantities of spillage are removed
+from the storage areas and the floor is swept.
+ Weekly: That appropriate disposal of all types of waste, including oil, toxic
+and hazardous waste, and surplus packing material is taking place.
+ Periodically: That the entire warehouse is cleaned from top to bottom and
+from the furthest point towards the main exit including: walls, stacks,
+floors, wall/floor joints and corners, roof beams, top of walls, doors,
+frames and door channels. Smaller damages to the warehouse building
+should be fixed as a part of the periodical check of the premises
+SOP – Warehouse & Inventory Management in UNHCR
+Section 8: Process Overview
+Version 1.0, last update: 18 Dec 2013 Page 31 of 38
+PO/IU MSR receipt
+(by Supply function)
+… the same day as the
+items were received
+Warehouse can only release goods
+after receiving an approved MSR from
+the UNHCR office
+UNHCR
+PO/IU MSR approved
+(by program)
+PO – Purchase Order,
+(including for
+donations)
+IU – Inter Unit MSR
+MSR – Material Stock
+Request
+Warehouse
+1ST inspection
+Checking documents
+Offloading & inspecting
+Good Receiving Note (GRN)
+Loss/Damage Form
+Storing/’Put away’
+Shipping
+Documents
+(PO/MSR/Waybi
+ll)
+Immediately
+report
+Loss or damage
+Goods
+Receiving
+Note
+Updating
+stock
+records
+UNHCR
+Daily
+GRN &
+Incoming
+Shipment Report
+Warehouse can only receive goods that
+are owned by UNHRC, and identified
+with a UNHCR PO number
+Goods delivery
+UNHCR
+IU/EXT MSR approved
+(by Program/Supply function)
+IU- inter unit
+EXT - external
+MSR – material stock request
+Warehouse
+Picking physical inventory
+Move to Staging Area
+Issue Waybill
+Release the inventory
+Information
+sharing
+Waybill Update
+stock
+records
+UNHCR
+MSR Pick & Ship
+(by Supply function)
+… the same day as the
+items were released
+Daily
+Waybill &
+Outgoing
+Shipment
+Approved
+MSR
+Section 8: Process Overview
+Releasing goods
+Receiving consignments
+SOP – Warehouse & Inventory Management in UNHCR
+Section 9: List of Abbreviations
+Version 1.0, last update: 18 Dec 2013 Page 32 of 38
+Section 9: List of Abbreviations
+List of
+abbreviations
+DESS Division of Emergency, Security and Supply
+CMR Convention of Contract for the International Carriage of
+Goods by Road
+CRI Core Relief Item
+DOAP Delegation of Authority Plan
+DONIK Donations in kind
+FIFO First in, first out. Turnover of stock procedure requiring first
+receipts to be issued/used first. UNHCR does not use FIFO
+as an evaluation method
+GRN Goods Receiving Note
+IPSAS
+International Public Sector Accounting Standards (IPSAS)
+are a set of accounting standards issued by the IPSAS Board
+for use by public sector entities around the world in the
+preparation of financial statements
+LOT ID Lot identification number assigned to a particular quantity or
+lot of material from a single manufacturer
+MSR Material Stock Request (MSR)
+MSRP Management System Renewal Project; UNHCR Enterprise
+Resource Planning system used for controlling a wider
+selection of functions within the organisation.
+PO Purchase Order
+SMLS Supply Management and Logistics Service (SMLS)
+SOP Standard Operating Procedures
+SOP – Warehouse & Inventory Management in UNHCR
+Section 10: Forms
+Version 1.0, last update: 18 Dec 2013 Page 33 of 38
+No. of units
+loaded
+Packing unit
+Item description (PU) Reject reason(s) / Remarks
+NOTE: The consignee must check the quantity delivered and note any loss or damage. Any losses or damage must be noted on this form. The consignee must sign
+all three copies of this form. If this document is cancelled, please mark appropriately.
+FORM CODE : D015
+Driver's name
+(Driver's signature)
+Loading started Date / Time Unloading started Date / Time
+Loading finished Date / Time Unloading finished Date / Time
+Loading supervisor /
+Store keeper (Signature of loading supervisor) Consignee (Signature of consignee)
+PO number
+Consignee Registration plate No
+Delivery address
+Vehicle arriving at
+consignee address: Date / Time
+UNHCR office: Date:
+Issuing warehouse: Transporter:
+WAYBILL
+Supply Management and Logistics Service
+DISTRIBUTION - UNHCR OFFICE (white)
+- DRIVER (blue)
+- RECEIVING WAREHOUSE (pink)
+- ISSUING WAREHOUSE (yellow)
+WAYBILL NUMBER
+Section 10: Forms
+Waybill
+SOP – Warehouse & Inventory Management in UNHCR
+Section 10: Forms
+Version 1.0, last update: 18 Dec 2013 Page 34 of 38
+Goods Receiving Note
+SOP – Warehouse & Inventory Management in UNHCR
+Section 10: Forms
+Version 1.0, last update: 18 Dec 2013 Page 35 of 38
+Stock Card
+SOP – Warehouse & Inventory Management in UNHCR
+Section 10: Forms
+Version 1.0, last update: 18 Dec 2013 Page 36 of 38
+Bin/Stack Card
+SOP – Warehouse & Inventory Management in UNHCR
+Section 10: Forms
+Version 1.0, last update: 18 Dec 2013 Page 37 of 38
+of
+Receipt
+Date
+Packing
+Unit
+(PU)
+Number
+of PUs
+received
+Pieces
+per PU
+Number
+of pieces
+received
+Incoming Shipments
+Good receiving note
+Warehouse
+Sender details PO or Donor No
+Date Page
+Item Description Remarks
+Incoming Shipments
+SOP – Warehouse & Inventory Management in UNHCR
+Section 10: Forms
+Version 1.0, last update: 18 Dec 2013 Page 38 of 38
+Outgoing Shipments
+of
+Issuing
+Date
+Packing
+Unit
+(PU)
+Number
+of PUs
+issued
+Pieces
+per PU
+Number
+of pieces
+issued
+Waybill No Consignee
+Warehouse Date Page
+MSR No Location PO or Donor No Item Description Remarks
+Outgoing Shipments

@@ -1,4 +1,4 @@
-# --- Python ---
+# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -6,7 +6,7 @@ __pycache__/
 *.pdb
 *.pkl
 
-# --- Virtual environment ---
+# Virtual environment
 venv/
 env/
 .final_project/
@@ -16,16 +16,19 @@ Include/
 Lib/
 pyvenv.cfg
 
-# --- VS Code ---
+# VS Code
 .vscode/
 *.code-workspace
 
-# --- OS / Editor junk ---
+# OS / Editor junk
 .DS_Store
 Thumbs.db
 
-# --- Logs ---
+# Logs
 *.log
 
-# --- Cache ---
+# Cache
 .cache/
+
+# Jupyter Checkpoint
+.ipynb_checkpoints

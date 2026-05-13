@@ -1,0 +1,301 @@
+product_id,product_name,category,unit_price
+1001,Craftsman 20V MAX Cordless Drill Kit,Power Tools,99.00
+1002,DeWalt 20V MAX Brushless Impact Driver,Power Tools,129.00
+1003,Makita 18V LXT Lithium-Ion Cordless Drill,Power Tools,119.00
+1004,Milwaukee M18 18V Cordless 1/2 in. Drill Driver,Power Tools,139.00
+1005,Ryobi ONE+ 18V Cordless Drill/Driver,Power Tools,79.00
+1006,Bosch 12V Max 3/8 in. Drill/Driver Kit,Power Tools,89.00
+1007,DeWalt 15 Amp 7-1/4 in. Circular Saw,Power Tools,149.00
+1008,Makita 15 Amp 7-1/4 in. Circular Saw,Power Tools,139.00
+1009,Milwaukee M18 FUEL 7-1/4 in. Circular Saw,Power Tools,199.00
+1010,Ryobi 15 Amp 7-1/4 in. Circular Saw,Power Tools,59.00
+1011,Craftsman 10 in. 15 Amp Table Saw,Power Tools,249.00
+1012,DeWalt 10 in. Jobsite Table Saw,Power Tools,379.00
+1013,Bosch 10 in. Worksite Table Saw,Power Tools,449.00
+1014,Makita 10 in. Dual-Bevel Sliding Compound Miter Saw,Power Tools,499.00
+1015,DeWalt 12 in. Sliding Compound Miter Saw,Power Tools,599.00
+1016,Ryobi 10 in. Sliding Compound Miter Saw,Power Tools,219.00
+1017,Milwaukee 12 Amp Sawzall Reciprocating Saw,Power Tools,129.00
+1018,DeWalt 20V MAX Cordless Reciprocating Saw,Power Tools,149.00
+1019,Makita 18V LXT Reciprocating Saw,Power Tools,139.00
+1020,Craftsman 20V MAX Reciprocating Saw,Power Tools,79.00
+1021,Ryobi ONE+ 18V Orbital Jigsaw,Power Tools,69.00
+1022,DeWalt 20V MAX XR Cordless Jigsaw,Power Tools,179.00
+1023,Bosch 7 Amp Top-Handle Jigsaw,Power Tools,149.00
+1024,Makita 4-1/2 in. Angle Grinder,Power Tools,79.00
+1025,DeWalt 4-1/2 in. 11 Amp Angle Grinder,Power Tools,89.00
+1026,Milwaukee 4-1/2 in. Small Angle Grinder,Power Tools,99.00
+1027,Ryobi 5 in. Random Orbit Sander,Power Tools,49.00
+1028,DeWalt 5 in. Random Orbit Sander,Power Tools,69.00
+1029,Makita 5 in. Random Orbit Sander,Power Tools,79.00
+1030,Craftsman 1/4 Sheet Orbital Sander,Power Tools,39.00
+1031,Bosch 2.25 HP Electronic Fixed-Base Router,Power Tools,199.00
+1032,DeWalt 1-1/4 HP Max Torque Compact Router,Power Tools,149.00
+1033,Makita 1-1/4 HP Compact Router,Power Tools,129.00
+1034,Ryobi ONE+ 18V 5.0 Ah Lithium-Ion Battery,Power Tools,89.00
+1035,DeWalt 20V MAX 5.0Ah XR Battery,Power Tools,129.00
+1036,Milwaukee M18 REDLITHIUM XC5.0 Battery,Power Tools,139.00
+1037,Makita 18V LXT Lithium-Ion 5.0Ah Battery,Power Tools,119.00
+1038,Craftsman V20 4.0Ah Lithium-Ion Battery,Power Tools,79.00
+1039,DeWalt 20V MAX Battery Charger,Power Tools,49.00
+1040,Milwaukee M18 and M12 Multi-Voltage Charger,Power Tools,59.00
+1041,DeWalt 100-Piece Screwdriver Bit Set,Power Tools,34.99
+1042,Makita 75-Piece Metric Drill and Screw Bit Set,Power Tools,29.99
+1043,Milwaukee 40-Piece Shockwave Drill/Drive Set,Power Tools,24.99
+1044,Ryobi 120-Piece Drill and Drive Kit,Power Tools,19.99
+1045,Craftsman 50-Piece Drill Bit Set,Power Tools,14.99
+1046,Diablo 7-1/4 in. 24-Teeth Framing Saw Blade,Power Tools,12.98
+1047,DeWalt 10 in. 60-Tooth Fine Finish Saw Blade,Power Tools,39.98
+1048,Makita 12 in. 80-Tooth Micro-Polished Saw Blade,Power Tools,54.98
+1049,Lenox 14-Piece Bi-Metal Hole Saw Kit,Power Tools,69.00
+1050,Milwaukee 9-Piece Hole Dozer Hole Saw Kit,Power Tools,59.00
+1051,DeWalt 5-Piece Reciprocating Saw Blade Set,Power Tools,15.99
+1052,Diablo 3-Piece Carbide Pruning Reciprocating Blades,Power Tools,22.99
+1053,Dremel 4300 Series Rotary Tool Kit,Power Tools,119.00
+1054,Ryobi 18V ONE+ Rotary Tool Station,Power Tools,79.00
+1055,DeWalt 20V MAX Oscillating Multi-Tool,Power Tools,129.00
+1056,Milwaukee M18 FUEL Oscillating Multi-Tool,Power Tools,149.00
+1057,Makita 18V LXT Oscillating Multi-Tool,Power Tools,119.00
+1058,Craftsman 3 Gallon Air Compressor,Power Tools,129.00
+1059,DeWalt 6 Gallon Pancake Air Compressor,Power Tools,169.00
+1060,Porter-Cable 6 Gallon Air Compressor Kit,Power Tools,199.00
+1061,Scotts Turf Builder Weed & Feed 14 lb.,Garden & Outdoors,24.98
+1062,Scotts Turf Builder Lawn Food 12.5 lb.,Garden & Outdoors,21.98
+1063,Miracle-Gro All Purpose Plant Food 5 lb.,Garden & Outdoors,14.98
+1064,Vigoro All-Purpose Fertilizer 16 lb.,Garden & Outdoors,18.98
+1065,Milorganite Slow-Release Nitrogen Fertilizer 32 lb.,Garden & Outdoors,17.98
+1066,Preen Garden Weed Preventer 16 lb.,Garden & Outdoors,29.98
+1067,Earthgro Premium Black Mulch 2 cu. ft.,Garden & Outdoors,3.98
+1068,Earthgro Premium Brown Mulch 2 cu. ft.,Garden & Outdoors,3.98
+1069,Earthgro Premium Red Mulch 2 cu. ft.,Garden & Outdoors,3.98
+1070,Vigoro Bagged Cedar Mulch 2 cu. ft.,Garden & Outdoors,4.98
+1071,Kellogg Garden Organics Raised Bed Soil 2 cu. ft.,Garden & Outdoors,8.98
+1072,Miracle-Gro Potting Mix 50 qt.,Garden & Outdoors,16.98
+1073,Miracle-Gro Garden Soil All Purpose 1 cu. ft.,Garden & Outdoors,6.98
+1074,Timberline Top Soil 40 lb.,Garden & Outdoors,2.48
+1075,Quikrete 50 lb. Play Sand,Garden & Outdoors,5.98
+1076,Roundup Ready-to-Use Weed & Grass Killer 1 gal.,Garden & Outdoors,22.98
+1077,Spectracide Weed & Grass Killer 1 gal.,Garden & Outdoors,16.98
+1078,Ortho Home Defense Insect Killer 1.1 gal.,Garden & Outdoors,18.98
+1079,Ames 4-Tine Forged Steel Spading Fork,Garden & Outdoors,29.98
+1080,Fiskars Long-Handle Digging Shovel,Garden & Outdoors,34.98
+1081,Razor-Back Square Point Shovel,Garden & Outdoors,39.98
+1082,Ames 22-Tine Steel Leaf Rake,Garden & Outdoors,19.98
+1083,Fiskars 14-Tine Bow Rake,Garden & Outdoors,24.98
+1084,True Temper Action Hoe,Garden & Outdoors,21.98
+1085,Fiskars Steel Bypass Pruning Shears,Garden & Outdoors,14.98
+1086,Corona Forged Bypass Lopper,Garden & Outdoors,34.98
+1087,Fiskars 28 inch Bypass Lopper,Garden & Outdoors,29.98
+1088,Flexzilla 5/8 in. x 50 ft. Heavy Duty Garden Hose,Garden & Outdoors,44.98
+1089,Apex 5/8 in. x 100 ft. NeverKink Garden Hose,Garden & Outdoors,59.98
+1090,Gilmour 5/8 in. x 50 ft. Flexogen Garden Hose,Garden & Outdoors,34.98
+1091,Orbit Metal 7-Pattern Hose Nozzle,Garden & Outdoors,12.98
+1092,Melnor Zinc Pistol Grip Water Nozzle,Garden & Outdoors,9.98
+1093,Orbit Brass Impact Sprinkler on Tripod,Garden & Outdoors,39.98
+1094,Melnor Oscillating Sprinkler with Timer,Garden & Outdoors,24.98
+1095,Honda 21 in. Self-Propelled Gas Lawn Mower,Garden & Outdoors,499.00
+1096,Toro Recycler 22 in. Gas Walk Behind Mower,Garden & Outdoors,349.00
+1097,EGO Power+ 21 in. 56V Cordless Lawn Mower,Garden & Outdoors,499.00
+1098,Ryobi 20 in. 40V Brushless Cordless Mower,Garden & Outdoors,299.00
+1099,Echo 21.2cc Gas 2-Stroke String Trimmer,Garden & Outdoors,199.00
+1100,Stihl FS 38 Gas String Trimmer,Garden & Outdoors,149.00
+1101,EGO Power+ 15 in. 56V Cordless String Trimmer,Garden & Outdoors,179.00
+1102,Ryobi 40V Cordless String Trimmer,Garden & Outdoors,149.00
+1103,Husqvarna 125B 28cc Gas Leaf Blower,Garden & Outdoors,169.00
+1104,EGO Power+ 650 CFM 56V Cordless Leaf Blower,Garden & Outdoors,249.00
+1105,Ryobi ONE+ 18V Cordless Leaf Blower,Garden & Outdoors,119.00
+1106,Toro Ultra 260 mph Electric Leaf Blower/Vacuum,Garden & Outdoors,89.00
+1107,Firm Grip Large Nitrile Coated Work Gloves,Garden & Outdoors,4.98
+1108,Mechanix Wear Original Work Gloves,Garden & Outdoors,19.98
+1109,12 in. Terra Cotta Clay Planter,Garden & Outdoors,14.98
+1110,Resin Whiskey Barrel Planter 20 in.,Garden & Outdoors,24.98
+1111,Southern Patio 15 in. High-Density Planter,Garden & Outdoors,19.98
+1112,Kingsford 16 lb. Original Charcoal Briquettes,Garden & Outdoors,12.98
+1113,Traeger 20 lb. Signature Blend Wood Pellets,Garden & Outdoors,19.98
+1114,Weber 22 in. Original Kettle Charcoal Grill,Garden & Outdoors,139.00
+1115,Char-Broil 4-Burner Gas Grill,Garden & Outdoors,249.00
+1116,Nexgrill 5-Burner Gas Grill with Side Burner,Garden & Outdoors,299.00
+1117,Blue Rhino 15 lb. Propane Tank Exchange,Garden & Outdoors,24.98
+1118,Hampton Bay 10 ft. Aluminum Patio Umbrella,Garden & Outdoors,89.00
+1119,Suncast 99 Gallon Resin Deck Box,Garden & Outdoors,149.00
+1120,Keter Westwood 150 Gallon Resin Deck Box,Garden & Outdoors,199.00
+1121,Grip-Rite 1-1/4 in. #6 Coarse Drywall Screws 1 lb.,Hardware,7.98
+1122,Grip-Rite 1-5/8 in. #6 Coarse Drywall Screws 1 lb.,Hardware,7.98
+1123,Grip-Rite 2 in. #8 Coarse Drywall Screws 1 lb.,Hardware,8.98
+1124,Spax 2-1/2 in. #8 T-Star Wood Screws 1 lb.,Hardware,9.98
+1125,Spax 3 in. #10 T-Star Wood Screws 1 lb.,Hardware,11.98
+1126,Deckmate 2-1/2 in. Star Flat-Head Deck Screws 1 lb.,Hardware,10.98
+1127,Deckmate 3 in. Star Flat-Head Deck Screws 1 lb.,Hardware,11.98
+1128,Kreg 1-1/4 in. Coarse Zinc Pocket-Hole Screws 100-Pack,Hardware,5.98
+1129,Kreg 2-1/2 in. Coarse Zinc Pocket-Hole Screws 50-Pack,Hardware,6.98
+1130,Everbilt #10 x 1 in. Phillips Flat Head Wood Screws 12-Pack,Hardware,1.48
+1131,Everbilt 1/4 in. x 2 in. Zinc Plated Lag Thread Screw,Hardware,0.78
+1132,Everbilt 5/16 in. x 3 in. Zinc Plated Lag Thread Screw,Hardware,0.98
+1133,Everbilt 3/8 in. x 4 in. Zinc Plated Lag Thread Screw,Hardware,1.28
+1134,Grip-Rite 16D 3-1/2 in. Bright Vinyl Coated Sinkers 1 lb.,Hardware,4.98
+1135,Grip-Rite 8D 2-1/2 in. Bright Vinyl Coated Sinkers 1 lb.,Hardware,4.98
+1136,Grip-Rite 1-1/2 in. Galvanized Roofing Nails 1 lb.,Hardware,5.98
+1137,Porter-Cable 2 in. 18-Gauge Brad Nails 1000-Pack,Hardware,7.98
+1138,Porter-Cable 1-1/4 in. 18-Gauge Brad Nails 1000-Pack,Hardware,6.98
+1139,Paslode 3 in. 30-Degree Framing Nails 2000-Pack,Hardware,49.98
+1140,Everbilt 1/4 in. Zinc-Plated Flat Washer 100-Pack,Hardware,4.98
+1141,Everbilt 5/16 in. Zinc-Plated Flat Washer 50-Pack,Hardware,3.98
+1142,Everbilt 3/8 in. Zinc-Plated Flat Washer 50-Pack,Hardware,4.98
+1143,Everbilt 1/4 in.-20 Zinc-Plated Hex Nut 100-Pack,Hardware,5.98
+1144,Everbilt 3/8 in.-16 Zinc-Plated Hex Nut 50-Pack,Hardware,6.98
+1145,Everbilt 1/4 in.-20 x 1-1/2 in. Zinc-Plated Hex Bolt,Hardware,0.48
+1146,Everbilt 3/8 in.-16 x 2 in. Zinc-Plated Hex Bolt,Hardware,0.88
+1147,Everbilt 1/2 in.-13 x 3 in. Zinc-Plated Hex Bolt,Hardware,1.48
+1148,Simpson Strong-Tie LU24 2x4 Joist Hanger,Hardware,1.18
+1149,Simpson Strong-Tie LU26 2x6 Joist Hanger,Hardware,1.48
+1150,Simpson Strong-Tie LU28 2x8 Joist Hanger,Hardware,1.78
+1151,Simpson Strong-Tie A21 2 in. Angle Bracket,Hardware,0.98
+1152,Simpson Strong-Tie A23 2 in. x 3 in. Angle Bracket,Hardware,1.28
+1153,Everbilt 3 in. x 3 in. Satin Nickel Door Hinge,Hardware,3.98
+1154,Everbilt 3-1/2 in. x 3-1/2 in. Matte Black Door Hinge,Hardware,4.48
+1155,Everbilt 4 in. x 4 in. Oil-Rubbed Bronze Door Hinge,Hardware,5.98
+1156,Defiant Satin Nickel Keyed Entry Door Knob,Hardware,14.98
+1157,Defiant Satin Nickel Single Cylinder Deadbolt,Hardware,14.98
+1158,Schlage Camelot Satin Nickel Keypad Entry with Flex-Lock,Hardware,129.00
+1159,Schlage Plymouth Matte Black Passage Door Knob,Hardware,29.98
+1160,Kwikset Tylo Polished Brass Keyed Entry Door Knob,Hardware,13.98
+1161,Kwikset SmartCode 909 Satin Nickel Electronic Deadbolt,Hardware,99.00
+1162,Liberty 3 in. Satin Nickel Arch Cabinet Pull,Hardware,3.48
+1163,Liberty 1-1/4 in. Satin Nickel Round Cabinet Knob,Hardware,2.98
+1164,Liberty 3-3/4 in. Matte Black Bar Cabinet Pull,Hardware,4.98
+1165,Richelieu 1-1/8 in. Chrome Square Cabinet Knob,Hardware,3.98
+1166,Brainerd 3 in. Bronze Cup Cabinet Pull,Hardware,4.48
+1167,E.Z. Ancor Toggle Lock 100 lb. Drywall Anchors 10-Pack,Hardware,6.98
+1168,Toggler Snaptoggle 1/4 in. Drywall Anchor 10-Pack,Hardware,11.98
+1169,Tapcon 1/4 in. x 2-3/4 in. Hex-Washer-Head Concrete Anchors 75-Pack,Hardware,24.98
+1170,Tapcon 3/16 in. x 1-3/4 in. Flat-Head Concrete Anchors 75-Pack,Hardware,19.98
+1171,Master Lock No. 3 Laminated Steel Padlock,Hardware,8.98
+1172,Master Lock Set-Your-Own Combination Padlock,Hardware,12.98
+1173,Command Large White Utility Hooks 3-Pack,Hardware,5.98
+1174,Command Medium Wire Toggle Hooks 6-Pack,Hardware,6.98
+1175,National Hardware 4 in. Zinc-Plated Barrel Bolt,Hardware,4.98
+1176,National Hardware 6 in. Black Heavy Duty T-Hinge,Hardware,8.98
+1177,National Hardware 3 in. Zinc-Plated Corner Brace 4-Pack,Hardware,5.98
+1178,Everbilt 1/8 in. x 30 ft. Galvanized Wire Rope,Hardware,9.98
+1179,Everbilt 1/4 in. x 1 ft. Grade 30 Zinc Plated Chain,Hardware,1.98
+1180,Hillman 1/4 in. x 3 in. Zinc-Plated Eye Bolt,Hardware,2.48
+1181,2 in. x 4 in. x 8 ft. Prime Premium Kiln Dried Whitewood Stud,Lumber,3.48
+1182,2 in. x 4 in. x 104-5/8 in. Prime Premium Kiln Dried Whitewood Stud,Lumber,3.98
+1183,2 in. x 4 in. x 10 ft. Standard Kiln Dried Whitewood Lumber,Lumber,4.98
+1184,2 in. x 4 in. x 12 ft. Standard Kiln Dried Whitewood Lumber,Lumber,6.48
+1185,2 in. x 6 in. x 8 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,5.98
+1186,2 in. x 6 in. x 10 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,7.48
+1187,2 in. x 6 in. x 12 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,9.48
+1188,2 in. x 8 in. x 8 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,8.98
+1189,2 in. x 8 in. x 10 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,11.48
+1190,2 in. x 8 in. x 12 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,13.98
+1191,2 in. x 10 in. x 8 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,11.98
+1192,2 in. x 10 in. x 10 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,14.98
+1193,2 in. x 10 in. x 12 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,18.48
+1194,2 in. x 12 in. x 8 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,15.98
+1195,2 in. x 12 in. x 12 ft. #2 Prime Kiln Dried Southern Yellow Pine,Lumber,24.98
+1196,4 in. x 4 in. x 8 ft. #2 Pressure-Treated Timber,Lumber,11.98
+1197,4 in. x 4 in. x 10 ft. #2 Pressure-Treated Timber,Lumber,15.98
+1198,4 in. x 4 in. x 12 ft. #2 Pressure-Treated Timber,Lumber,19.98
+1199,2 in. x 4 in. x 8 ft. #2 Prime Pressure-Treated Lumber,Lumber,4.98
+1200,2 in. x 6 in. x 8 ft. #2 Prime Pressure-Treated Lumber,Lumber,7.48
+1201,2 in. x 6 in. x 10 ft. #2 Prime Pressure-Treated Lumber,Lumber,9.48
+1202,5/4 in. x 6 in. x 8 ft. Standard Pressure-Treated Decking Board,Lumber,6.98
+1203,5/4 in. x 6 in. x 12 ft. Standard Pressure-Treated Decking Board,Lumber,10.98
+1204,5/4 in. x 6 in. x 16 ft. Standard Pressure-Treated Decking Board,Lumber,14.98
+1205,15/32 in. x 4 ft. x 8 ft. CDX Pine Plywood,Lumber,22.98
+1206,23/32 in. x 4 ft. x 8 ft. RTD Sheathing Plywood,Lumber,34.98
+1207,7/16 in. x 4 ft. x 8 ft. OSB Sheathing,Lumber,16.98
+1208,1/4 in. x 4 ft. x 8 ft. Sanded Pine Plywood,Lumber,24.98
+1209,1/2 in. x 4 ft. x 8 ft. Sanded Pine Plywood,Lumber,39.98
+1210,3/4 in. x 4 ft. x 8 ft. Sanded Pine Plywood,Lumber,49.98
+1211,3/4 in. x 4 ft. x 8 ft. PureBond Birch Plywood,Lumber,69.98
+1212,3/4 in. x 4 ft. x 8 ft. PureBond Oak Plywood,Lumber,74.98
+1213,1 in. x 2 in. x 8 ft. Furring Strip Board,Lumber,1.98
+1214,1 in. x 3 in. x 8 ft. Furring Strip Board,Lumber,2.48
+1215,1 in. x 4 in. x 8 ft. Premium Kiln Dried Square Edge Whitewood Board,Lumber,4.98
+1216,1 in. x 6 in. x 8 ft. Premium Kiln Dried Square Edge Whitewood Board,Lumber,7.48
+1217,1 in. x 8 in. x 8 ft. Premium Kiln Dried Square Edge Whitewood Board,Lumber,9.98
+1218,1 in. x 12 in. x 8 ft. Premium Kiln Dried Square Edge Whitewood Board,Lumber,16.98
+1219,1 in. x 4 in. x 8 ft. Select Pine Board,Lumber,9.98
+1220,1 in. x 6 in. x 8 ft. Select Pine Board,Lumber,14.98
+1221,1 in. x 8 in. x 8 ft. Select Pine Board,Lumber,21.98
+1222,1 in. x 4 in. x 8 ft. Poplar Board,Lumber,14.98
+1223,1 in. x 6 in. x 8 ft. Poplar Board,Lumber,22.98
+1224,1 in. x 4 in. x 8 ft. Red Oak Board,Lumber,24.98
+1225,1 in. x 6 in. x 8 ft. Red Oak Board,Lumber,39.98
+1226,WM 356 11/16 in. x 2-1/4 in. Primed Pine Casing Moulding,Lumber,8.98
+1227,WM 327 11/16 in. x 2-1/4 in. Primed Pine Casing Moulding,Lumber,8.98
+1228,WM 623 9/16 in. x 3-1/4 in. Primed Pine Base Moulding,Lumber,12.98
+1229,WM 618 9/16 in. x 5-1/4 in. Primed Pine Base Moulding,Lumber,18.98
+1230,WM 49 9/16 in. x 3-5/8 in. Primed Pine Crown Moulding,Lumber,14.98
+1231,WM 45 9/16 in. x 5-1/4 in. Primed Pine Crown Moulding,Lumber,21.98
+1232,WM 129 7/16 in. x 11/16 in. Primed Pine Shoe Moulding,Lumber,5.98
+1233,WM 106 11/16 in. x 11/16 in. Primed Pine Quarter Round Moulding,Lumber,5.98
+1234,Trex Enhance Naturals 1 in. x 6 in. x 12 ft. Toasted Sand Composite Decking,Lumber,32.98
+1235,Trex Enhance Naturals 1 in. x 6 in. x 16 ft. Toasted Sand Composite Decking,Lumber,43.98
+1236,Fiberon ArmorGuard 1 in. x 6 in. x 12 ft. Nantucket Gray Composite Decking,Lumber,29.98
+1237,3/8 in. x 4 ft. x 8 ft. T1-11 Fir Plywood Siding,Lumber,44.98
+1238,5/8 in. x 4 ft. x 8 ft. T1-11 Pine Plywood Siding,Lumber,49.98
+1239,HardiePlank 5/16 in. x 8-1/4 in. x 144 in. Cedarmill Fiber Cement Lap Siding,Lumber,11.98
+1240,LP SmartSide 3/8 in. x 8 in. x 16 ft. Primed Engineered Wood Siding,Lumber,14.98
+1241,Charlotte Pipe 1/2 in. x 10 ft. PVC Schedule 40 Plain End Pipe,Plumbing,3.98
+1242,Charlotte Pipe 3/4 in. x 10 ft. PVC Schedule 40 Plain End Pipe,Plumbing,4.98
+1243,Charlotte Pipe 1 in. x 10 ft. PVC Schedule 40 Plain End Pipe,Plumbing,6.48
+1244,Charlotte Pipe 1-1/2 in. x 10 ft. PVC Schedule 40 Plain End Pipe,Plumbing,9.98
+1245,Charlotte Pipe 2 in. x 10 ft. PVC Schedule 40 Plain End Pipe,Plumbing,12.98
+1246,Charlotte Pipe 3 in. x 10 ft. PVC Schedule 40 Plain End Pipe,Plumbing,24.98
+1247,Charlotte Pipe 4 in. x 10 ft. PVC Schedule 40 Plain End Pipe,Plumbing,34.98
+1248,Spears 1/2 in. PVC Schedule 40 90-Degree Elbow,Plumbing,0.68
+1249,Spears 3/4 in. PVC Schedule 40 90-Degree Elbow,Plumbing,0.88
+1250,Spears 1 in. PVC Schedule 40 90-Degree Elbow,Plumbing,1.48
+1251,Spears 1/2 in. PVC Schedule 40 Tee,Plumbing,0.78
+1252,Spears 3/4 in. PVC Schedule 40 Tee,Plumbing,1.18
+1253,Spears 1/2 in. PVC Schedule 40 Coupling,Plumbing,0.48
+1254,Spears 3/4 in. PVC Schedule 40 Coupling,Plumbing,0.68
+1255,Spears 1-1/2 in. PVC Schedule 40 P-Trap,Plumbing,4.98
+1256,Cerro 1/2 in. x 10 ft. Type L Hard Copper Pipe,Plumbing,24.98
+1257,Cerro 3/4 in. x 10 ft. Type L Hard Copper Pipe,Plumbing,39.98
+1258,Cerro 1 in. x 10 ft. Type L Hard Copper Pipe,Plumbing,54.98
+1259,Nibco 1/2 in. Copper Sweat 90-Degree Elbow,Plumbing,1.48
+1260,Nibco 3/4 in. Copper Sweat 90-Degree Elbow,Plumbing,2.48
+1261,Nibco 1/2 in. Copper Sweat Tee,Plumbing,2.98
+1262,Nibco 3/4 in. Copper Sweat Tee,Plumbing,4.48
+1263,Nibco 1/2 in. Copper Sweat Coupling,Plumbing,0.98
+1264,Nibco 3/4 in. Copper Sweat Coupling,Plumbing,1.48
+1265,SharkBite 1/2 in. x 100 ft. Blue PEX Tubing,Plumbing,34.98
+1266,SharkBite 1/2 in. x 100 ft. Red PEX Tubing,Plumbing,34.98
+1267,SharkBite 3/4 in. x 100 ft. Blue PEX Tubing,Plumbing,54.98
+1268,SharkBite 3/4 in. x 100 ft. Red PEX Tubing,Plumbing,54.98
+1269,SharkBite 1/2 in. Push-to-Connect Brass 90-Degree Elbow,Plumbing,7.98
+1270,SharkBite 3/4 in. Push-to-Connect Brass 90-Degree Elbow,Plumbing,9.98
+1271,SharkBite 1/2 in. Push-to-Connect Brass Coupling,Plumbing,6.98
+1272,SharkBite 3/4 in. Push-to-Connect Brass Coupling,Plumbing,8.98
+1273,SharkBite 1/2 in. Push-to-Connect Brass Tee,Plumbing,11.98
+1274,SharkBite 1/2 in. Push-to-Connect Brass Ball Valve,Plumbing,14.98
+1275,SharkBite 3/4 in. Push-to-Connect Brass Ball Valve,Plumbing,19.98
+1276,Homewerks 1/2 in. FIP x 1/2 in. FIP Brass Threaded Ball Valve,Plumbing,8.98
+1277,Homewerks 3/4 in. FIP x 3/4 in. FIP Brass Threaded Ball Valve,Plumbing,12.98
+1278,BrassCraft 1/2 in. NOM x 3/8 in. OD Compression Quarter-Turn Angle Valve,Plumbing,8.48
+1279,BrassCraft 1/2 in. NOM x 3/8 in. OD Compression Quarter-Turn Straight Valve,Plumbing,8.48
+1280,Fluidmaster 12 in. Braided Stainless Steel Toilet Connector,Plumbing,5.98
+1281,Fluidmaster 20 in. Braided Stainless Steel Faucet Connector,Plumbing,6.98
+1282,Oatey 8 oz. Regular Clear PVC Cement,Plumbing,5.98
+1283,Oatey 8 oz. Purple Primer,Plumbing,5.98
+1284,Oatey 1.7 oz. Lead-Free Tinning Flux,Plumbing,4.48
+1285,Oatey 1/2 lb. Lead-Free Wire Solder,Plumbing,14.98
+1286,Harvey 1/2 in. x 260 in. PTFE Thread Seal Tape,Plumbing,1.48
+1287,RectorSeal No. 5 1/2 pt. Pipe Thread Sealant,Plumbing,7.98
+1288,Fluidmaster 400A Universal Toilet Fill Valve,Plumbing,9.98
+1289,Fluidmaster 2 in. Universal Toilet Flapper,Plumbing,5.98
+1290,Korky Premium Wax Ring with Brass Bolts,Plumbing,6.98
+1291,Kohler Highline Arc The Complete Solution 2-Piece Elongated Toilet,Plumbing,199.00
+1292,American Standard Champion 4 Tall Height 2-Piece Elongated Toilet,Plumbing,249.00
+1293,Glacier Bay 2-Piece Dual Flush Elongated Toilet,Plumbing,119.00
+1294,Moen Adler Single-Handle Centerset Bathroom Faucet in Chrome,Plumbing,49.00
+1295,Delta Lahara 2-Handle Centerset Bathroom Faucet in SpotShield Brushed Nickel,Plumbing,99.00
+1296,Kohler Coralais Single-Handle Pull-Out Sprayer Kitchen Faucet,Plumbing,149.00
+1297,InSinkErator Badger 5 1/2 HP Continuous Feed Garbage Disposal,Plumbing,119.00
+1298,Ridgid 1/4 in. x 25 ft. Power Spin+ Drain Cleaner,Plumbing,44.98
+1299,Korky Heavy Duty Beehive Toilet Plunger,Plumbing,16.98
+1300,Everbilt 1/3 HP Submersible Sump Pump,Plumbing,129.00

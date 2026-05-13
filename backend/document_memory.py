@@ -13,7 +13,10 @@ from backend.shared_vector_memory import vector_store
 # These functions help load new files into vector memory
 def load_documents(folder: str = "./docs"):
     txt_loader = DirectoryLoader(
-        f"{folder}/txt", glob="**/*.txt", loader_cls=TextLoader
+        f"{folder}/txt",
+        glob="**/*.txt",
+        loader_cls=TextLoader,
+        loader_kwargs={"encoding": "utf-8"},
     )
     txt_docs = txt_loader.load()
 

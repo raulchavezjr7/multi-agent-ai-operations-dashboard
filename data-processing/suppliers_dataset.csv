@@ -1,0 +1,21 @@
+supplier_id,supplier_name,contact_email,lead_time_days,rating,payment_terms
+SUPP-01,DeWalt Tools Inc.,sales@dewalt-dist.com,7,4.8,Net-30
+SUPP-02,Milwaukee Tool Corp,orders@milwaukee.com,10,4.7,Net-30
+SUPP-03,Makita USA,support@makita-wholesale.com,22,3.2,Net-60
+SUPP-04,Bosch Power Systems,b2b@bosch.com,14,4.5,Net-30
+SUPP-05,EGO Power+,fulfillment@egopower.com,12,4.9,Net-15
+SUPP-06,Scotts Miracle-Gro,retail@scotts.com,5,4.6,Net-30
+SUPP-07,Weber-Stephen,dealer@weber.com,14,4.8,Net-30
+SUPP-08,Fastenal Co.,supply@fastenal.com,3,4.5,Due on Receipt
+SUPP-09,Stanley Black & Decker,wholesale@sbd.com,7,4.4,Net-30
+SUPP-10,Gorilla Glue Co.,ops@gorillaglue.com,4,4.7,Net-15
+SUPP-11,Great Northern Lumber,logistics@gn-lumber.com,35,4.2,Net-60
+SUPP-12,Blue Ridge Forest Prods,timber@blueridge.com,28,4.5,Net-30
+SUPP-13,SharkBite Plumbing,sales@sharkbite.com,6,4.9,Net-30
+SUPP-14,PVC Solutions Ltd.,admin@pvcsolutions.net,10,2.8,Net-30
+SUPP-15,Kohler Co.,pro@kohler.com,18,4.7,Net-60
+SUPP-16,Orgill Inc.,member@orgill.com,5,4.3,Net-30
+SUPP-17,Do It Best Corp,supply@doitbest.com,4,4.6,Net-30
+SUPP-18,True Value Co.,help@truevalue.com,5,4.4,Net-30
+SUPP-19,Hillman Group,bolts@hillman.com,3,4.8,Due on Receipt
+SUPP-20,Owens Corning,delays@oc-insulation.com,40,4.1,Net-60

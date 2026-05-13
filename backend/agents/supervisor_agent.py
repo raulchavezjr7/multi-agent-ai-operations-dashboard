@@ -415,7 +415,7 @@ class SupervisorAgent:
                 json={
                     "model": self.model,
                     "messages": messages,
-                    "temperature": 0.3,
+                    "temperature": 0.4,
                     "max_tokens": 800,
                 },
                 timeout=480,
