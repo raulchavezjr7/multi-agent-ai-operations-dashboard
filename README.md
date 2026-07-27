@@ -1,7 +1,7 @@
 # multi-agent-ai-operations-dashboard
 A local‑only AI Ops Dashboard powered by a multi‑agent system, shared vector memory, and a RAG pipeline. Includes five domain agents, a Supervisor agent, LLM integration, and a functional dashboard UI built entirely with free, local, and using open‑source tools.
 
---This project is in development. This is my master’s capstone project.
+This is my master’s capstone project.
 
 <img width="624" height="304" alt="visualizaition-page" src="https://github.com/user-attachments/assets/672df931-e7e4-4fb2-bcf9-cbef80ac8518" />
 
